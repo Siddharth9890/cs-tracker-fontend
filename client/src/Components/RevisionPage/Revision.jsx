@@ -37,7 +37,7 @@ export default function Revision() {
     const newList = questions.filter((item) => item.id !== questionIdx);
     const response = await (
       await fetch(
-        `http://localhost:5000/api/v1/revision/${userData.email}/${questionName}`,
+        `https://cs-tracker-backend.herokuapp.com/api/v1/revision/${userData.email}/${questionName}`,
         {
           method: "DELETE",
           headers: {
