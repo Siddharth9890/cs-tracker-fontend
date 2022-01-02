@@ -10,7 +10,7 @@ export default function QuestionList() {
     async function getData() {
       try {
         const data = await (
-          await fetch(`http://localhost:5000/api/v1/question/${subjectName}`)
+          await fetch(`https://cs-tracker-backend.herokuapp.com/api/v1/question/${subjectName}`)
         ).json();
         setQuestions(data.body);
       } catch (error) {}

@@ -24,7 +24,7 @@ export default function CreateAccountPage() {
     if (password !== confirmedPassword) {
       setOpenError(true);
     } else {
-      const response = await fetch("http://localhost:5000/api/v1/user/signUp", {
+      const response = await fetch("https://cs-tracker-backend.herokuapp.com/api/v1/user/signUp", {
         method: "POST",
         credentials: "include",
         headers: {

@@ -12,7 +12,7 @@ export default function CreateSubject({ userData }) {
     if (userData.role === "user") setError(true);
     else {
       const response = await (
-        await fetch("http://localhost:5000/api/v1/subject", {
+        await fetch("https://cs-tracker-backend.herokuapp.com/api/v1/subject", {
           method: "POST",
           headers: {
             "Content-type": "application/json",

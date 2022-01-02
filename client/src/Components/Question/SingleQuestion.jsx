@@ -12,7 +12,7 @@ export default function SingleQuestion() {
       try {
         const data = await (
           await fetch(
-            `http://localhost:5000/api/v1/question/${subjectName}/${questionName}`
+            `https://cs-tracker-backend.herokuapp.com/api/v1/question/${subjectName}/${questionName}`
           )
         ).json();
         setQuestions(data.body);

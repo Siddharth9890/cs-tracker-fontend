@@ -12,7 +12,7 @@ export default function Revision() {
     const getQuestions = async (userData) => {
       if (userData) {
         const response = await fetch(
-          `http://localhost:5000/api/v1/revision/${userData.email}`
+          `https://cs-tracker-backend.herokuapp.com/api/v1/revision/${userData.email}`
         );
         const { body } = await response.json();
         const sortedQuestions = body.sort((a, b) =>

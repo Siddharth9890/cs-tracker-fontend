@@ -21,7 +21,7 @@ export default function SingleQuestionDescription({ question }) {
     const getOneQuestionDoneByUser = async () => {
       const response = await (
         await fetch(
-          `http://localhost:5000/api/v1/submission/${userData.email}/${question.name}`
+          `https://cs-tracker-backend.herokuapp.com/api/v1/submission/${userData.email}/${question.name}`
         )
       ).json();
       setSubmittedData(response.body[0]);
