@@ -41,25 +41,28 @@ export default function SingleQuestionDescription({ question }) {
   const [leetCodeButton, setLeetCodeButton] = useState(false);
   const [revisionDate, setRevisionDate] = useState(null);
   const submitData = async (question) => {
+    setDisableSubmitButton(true);
     if (userData === null) {
       setUserNotError(true);
     } else {
-      setDisableSubmitButton(true);
-      const response = await fetch("http://localhost:5000/api/v1/submission", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          questionName: question.name,
-          questionTopic: question.topicUnderSubject,
-          submittedBy: userData.email,
-          isCompleted: true,
-          completionDate: new Date(Date.now()),
-          difficulty: question.difficulty,
-          revisionDate: revisionDate ? revisionDate : undefined,
-        }),
-      });
+      const response = await fetch(
+        "https://cs-tracker-backend.herokuapp.com/api/v1/submission",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            questionName: question.name,
+            questionTopic: question.topicUnderSubject,
+            submittedBy: userData.email,
+            isCompleted: true,
+            completionDate: new Date(Date.now()),
+            difficulty: question.difficulty,
+            revisionDate: revisionDate ? revisionDate : undefined,
+          }),
+        }
+      );
       const result = await response.json();
       if (result.message === "failed") {
         setError(true);
@@ -68,8 +71,8 @@ export default function SingleQuestionDescription({ question }) {
       }
       setSolutionButton(false);
       setRevisionButton(false);
-      setDisableSubmitButton(false);
     }
+    setDisableSubmitButton(false);
   };
 
   return (
