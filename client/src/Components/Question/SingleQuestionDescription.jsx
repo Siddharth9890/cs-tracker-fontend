@@ -26,7 +26,7 @@ export default function SingleQuestionDescription({ question }) {
       ).json();
       setSubmittedData(response.body[0]);
     };
-    getOneQuestionDoneByUser();
+    if (userData) getOneQuestionDoneByUser();
   }, []);
 
   const [solutionButton, setSolutionButton] = useState(false);
