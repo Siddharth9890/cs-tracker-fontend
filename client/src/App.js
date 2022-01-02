@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     // verify the token first and then load the user if token is valid
     const verifyToken = async (email, token) => {
-      const response = await fetch("/api/v1/user/verifyToken", {
+      const response = await fetch("https://cs-tracker-backend.herokuapp.com/api/v1/user/verifyToken", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -57,7 +57,7 @@ function App() {
 
   // get the user by email if token is valid
   const getUser = async (email) => {
-    const response = await fetch("/api/v1/user/findUser", {
+    const response = await fetch("https://cs-tracker-backend.herokuapp.com/api/v1/user/findUser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

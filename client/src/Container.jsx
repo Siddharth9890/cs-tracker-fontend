@@ -10,7 +10,7 @@ export default function Container() {
     async function getData() {
       try {
         const response = await (
-          await fetch("http://localhost:5000/api/v1/subject")
+          await fetch("https://cs-tracker-backend.herokuapp.com/api/v1/subject")
         ).json();
         setSubjects(response.body);
       } catch (error) {}
