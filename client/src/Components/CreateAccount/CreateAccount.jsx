@@ -26,7 +26,6 @@ export default function CreateAccountPage() {
     } else {
       const response = await fetch("https://cs-tracker-backend.herokuapp.com/api/v1/user/signUp", {
         method: "POST",
-        credentials: "include",
         headers: {
           "Content-Type": "application/json",
         },

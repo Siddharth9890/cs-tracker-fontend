@@ -41,10 +41,10 @@ export default function SingleQuestionDescription({ question }) {
   const [leetCodeButton, setLeetCodeButton] = useState(false);
   const [revisionDate, setRevisionDate] = useState(null);
   const submitData = async (question) => {
-    setDisableSubmitButton(true);
     if (userData === null) {
       setUserNotError(true);
     } else {
+      setDisableSubmitButton(true);
       const response = await fetch("http://localhost:5000/api/v1/submission", {
         method: "POST",
         headers: {
