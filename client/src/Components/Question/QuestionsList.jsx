@@ -1,30 +1,38 @@
 import { useNavigate, useParams } from "react-router";
 import { useState, useEffect } from "react";
 import NoDetailsFound from "../NoAccount/NoDetailsFound";
+import Loading from "../Loading/Loading";
 
 export default function QuestionList() {
   const { subjectName } = useParams();
+  const [isLoading, setIsLoading] = useState(false);
+
   // get all questions under a topic
   const [questions, setQuestions] = useState([]);
   useEffect(() => {
     async function getData() {
+      setIsLoading(true);
       try {
         const data = await (
-          await fetch(`https://cs-tracker-backend.herokuapp.com/api/v1/question/${subjectName}`)
+          await fetch(
+            `https://cs-tracker-backend.herokuapp.com/api/v1/question/${subjectName}`
+          )
         ).json();
         setQuestions(data.body);
+        setIsLoading(false);
       } catch (error) {}
     }
     getData();
   }, []);
   const navigate = useNavigate();
-  return questions.length === 0 ? (
-    <NoDetailsFound />
+  return isLoading ? (
+    <Loading isLoading={isLoading} />
   ) : (
     <ul
       role="list"
       className=" mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
     >
+      {questions.length === 0 && <NoDetailsFound />}
       {questions.map((question) => (
         <li
           key={question.name}
