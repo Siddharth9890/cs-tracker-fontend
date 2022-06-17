@@ -54,6 +54,7 @@ function SingleQuestionDescription({ question }: { question: questionType }) {
     return () => {
       setNotes("");
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const submitData = async (question: questionType) => {

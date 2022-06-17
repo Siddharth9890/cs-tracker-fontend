@@ -7,6 +7,7 @@ import axios from "../../api";
 import useUser from "../../hooks/useUser";
 import { useRouter } from "next/router";
 import store2 from "store2";
+import Image from "next/image";
 
 toast.configure();
 
@@ -53,8 +54,8 @@ function NewUser({
 
   useEffect(() => {
     if (user.email.length > 0) get2Fa();
-
     return () => {};
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const verify2Fa = async () => {
@@ -104,7 +105,7 @@ function NewUser({
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="relative rounded-lg overflow-hidden">
           <div className="absolute inset-0">
-            <img
+            <Image
               src="https://tailwindui.com/img/ecommerce-images/home-page-01-feature-section-01.jpg"
               alt=""
               className="w-full h-full object-center object-cover"

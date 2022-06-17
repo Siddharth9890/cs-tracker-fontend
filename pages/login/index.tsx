@@ -142,7 +142,7 @@ function Login() {
               <SubmitButton />
             </div>
             <div className="mt-2 text-center text-lg text-gray-600">
-              Or Don't have a account{" "}
+              Or Create a new account{" "}
               <div className="font-medium text-indigo-600 hover:text-indigo-500">
                 <Link href={"/register"}>Sign Up</Link>
               </div>

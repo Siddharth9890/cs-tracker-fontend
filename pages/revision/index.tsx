@@ -42,12 +42,13 @@ function Revision() {
       setLoading(false);
     }
   };
-  
+
   useEffect(() => {
     if (user.email.length > 0) getQuestions(user.email);
     return () => {
       setQuestions([]);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleRemove = async (question: revisionType) => {

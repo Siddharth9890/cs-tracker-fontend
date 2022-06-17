@@ -1,3 +1,4 @@
+import Image from "next/image";
 import NoDetailsFound from "../utils/NoDetailsFound";
 import { subjectType } from "../../customTypes";
 import { useRouter } from "next/router";
@@ -30,7 +31,7 @@ function Container({ subjects }: { subjects: subjectType[] }) {
                 >
                   <div className="space-y-4">
                     <div className="aspect-w-3 aspect-h-2">
-                      <img
+                      <Image
                         className="object-cover shadow-lg rounded-lg"
                         src={subject.image_url}
                         alt={subject.subject_name}

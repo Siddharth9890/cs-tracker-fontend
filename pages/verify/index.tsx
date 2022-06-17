@@ -77,6 +77,7 @@ function VerifyEmail() {
     if (user.multi_factor_enabled) router.push("/verify-mfa");
     else if (user.email.length > 0) sendOtpFunction();
     else router.push("/login");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function SendOtpButton() {
