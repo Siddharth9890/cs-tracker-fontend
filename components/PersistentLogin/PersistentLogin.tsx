@@ -35,7 +35,6 @@ const PersistLogin = () => {
         signIn(finalUser);
       } catch (err) {
         store2.session("account", "clear");
-        router.replace("/");
       } finally {
         isMounted && setIsLoading(false);
       }
