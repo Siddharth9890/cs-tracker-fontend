@@ -24,13 +24,9 @@ toast.configure();
 function Login() {
   const [user, signIn] = useUser();
   const [email, setEmail] = useState("");
+  const [token, setToken] = useState("");
   const router = useRouter();
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
-
-  const test = async (token: string, ekey: string) => {
-    console.log(token);
-    console.log(ekey);
-  };
 
   const submit = async (e: any) => {
     e.preventDefault();
@@ -72,7 +68,12 @@ function Login() {
   };
 
   function SubmitButton() {
-    if (email && email.includes("@") && email.includes(".com")) {
+    if (
+      email &&
+      email.includes("@") &&
+      email.includes(".com") &&
+      token.length > 0
+    ) {
       return (
         <button
           type="submit"
@@ -137,7 +138,7 @@ function Login() {
               </div>
               <HCaptcha
                 sitekey={process.env.NEXT_PUBLIC_CAPTCHA!}
-                onVerify={(token, ekey) => test(token, ekey)}
+                onVerify={(token, ekey) => setToken(token)}
               />
               <SubmitButton />
             </div>
