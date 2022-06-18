@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import logo from "../../public/logo.png";
-import Image from "next/image";
+import Image from "../Images";
 import Link from "next/link";
 import useUser from "../../hooks/useUser";
 

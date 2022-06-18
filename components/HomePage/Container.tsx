@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "../Images";
 import NoDetailsFound from "../utils/NoDetailsFound";
 import { subjectType } from "../../customTypes";
 import { useRouter } from "next/router";

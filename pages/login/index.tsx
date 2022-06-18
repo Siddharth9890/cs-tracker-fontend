@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "../../components/Images";
 import { useRouter } from "next/router";
 
 import store2 from "store2";

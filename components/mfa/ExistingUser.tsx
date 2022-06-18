@@ -1,7 +1,6 @@
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { Switch } from "@headlessui/react";
-import Image from "next/image";
-
+import Image from "../Images";
 import { useRouter } from "next/router";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

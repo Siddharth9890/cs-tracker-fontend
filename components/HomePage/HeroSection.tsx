@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "../Images";
 import HeroImage from "../../public/heroImage.avif";
 
 function HeroSection() {

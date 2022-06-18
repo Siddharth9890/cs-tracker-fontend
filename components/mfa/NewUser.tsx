@@ -7,7 +7,7 @@ import axios from "../../api";
 import useUser from "../../hooks/useUser";
 import { useRouter } from "next/router";
 import store2 from "store2";
-import Image from "next/image";
+import Image from "../Images";
 
 toast.configure();
 

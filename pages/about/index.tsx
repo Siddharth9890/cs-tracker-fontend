@@ -3,7 +3,7 @@ import varan from "../../public/varandeep.jpg";
 import shreyas from "../../public/shreyas.png";
 import github from "../../public/github.png";
 import website from "../../public/website.png";
-import Image from "next/image";
+import Image from "../../components/Images";
 import Head from "next/head";
 
 const people = [
