@@ -30,11 +30,11 @@ function VerifyEmail() {
     setCounter(60);
     setSendOtp(false);
     try {
-      // const { data } = await axios.post(
-      //   "auth/send-mail",
-      //   JSON.stringify({ email: user.email })
-      // );
-      setActualOtp("111111");
+      const { data } = await axios.post(
+        "auth/send-mail",
+        JSON.stringify({ email: user.email })
+      );
+      setActualOtp(data.body.otp);
     } catch (error) {
       toast.error("Something went wrong!", {
         position: "bottom-right",
