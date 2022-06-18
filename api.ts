@@ -1,7 +1,8 @@
 import axios from "axios";
-const baseUrlCacheServer = "http://localhost:8000/api/v2/";
+const baseUrlCacheServer =
+  "https://cache-server-cs-tracker.herokuapp.com/api/v2/";
 
-const baseUrlMainServer = "http://localhost:5000/api/v2/";
+const baseUrlMainServer = "https://cs-tracker-backend.herokuapp.com/api/v2";
 
 export default axios.create({
   baseURL: baseUrlMainServer,

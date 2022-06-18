@@ -35,6 +35,8 @@ function Container({ subjects }: { subjects: subjectType[] }) {
                         className="object-cover shadow-lg rounded-lg"
                         src={subject.image_url}
                         alt={subject.subject_name}
+                        height={300}
+                        width={600}
                       />
                     </div>
 
