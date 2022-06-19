@@ -81,6 +81,7 @@ export default QuestionList;
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const { data } = await cacheServerUrl.get("/question/Linked List");
+
   const paths = data.body.map((question: questionType) => {
     return {
       params: {
