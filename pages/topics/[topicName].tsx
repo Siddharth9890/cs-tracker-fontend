@@ -61,11 +61,11 @@ function Topics({ topics }: { topics: topicType[] }) {
 export default Topics;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const { data } = await cacheServerUrl.get("/topic");
-  const paths = data.body.map((topic: any) => {
+  const { data } = await cacheServerUrl.get("/topic/DSAAA");
+  const paths = data.body.map((topic: topicType) => {
     return {
       params: {
-        topicName: `${topic.name}`,
+        topicName: `${topic.topic_name}`,
       },
     };
   });

@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 
-import { questionType } from "../../customTypes";
+import { questionType, topicType } from "../../customTypes";
 import Loading from "../../components/utils/Loading";
 
 import NoDetailsFound from "../../components/utils/NoDetailsFound";
@@ -81,10 +81,10 @@ export default QuestionList;
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const { data } = await cacheServerUrl.get("/question/Linked List");
-  const paths = data.body.map((topic: any) => {
+  const paths = data.body.map((question: questionType) => {
     return {
       params: {
-        topicName: `${topic.name}`,
+        topicName: `${question.under_which_topic}`,
       },
     };
   });
