@@ -5,4 +5,5 @@ import reducers from "./users/userReducer";
 export const store = configureStore({
   reducer: reducers,
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk),
+  devTools: false,
 });
