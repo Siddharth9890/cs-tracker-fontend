@@ -1,6 +1,6 @@
 import { Fragment, useRef } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import HashLoader from "react-spinners/HashLoader";
+import { TailSpin } from "react-loading-icons";
 
 function LoadingUser() {
   const cancelButtonRef = useRef(null);
@@ -22,7 +22,7 @@ function LoadingUser() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-black bg-opacity-20 transition-opacity" />
+          <div className="fixed inset-0 bg-black  transition-opacity" />
         </Transition.Child>
 
         <div className="fixed z-10 inset-0 overflow-y-auto">
@@ -36,18 +36,20 @@ function LoadingUser() {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full">
-                <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                  <div className="sm:flex sm:items-start">
+              <Dialog.Panel className="relative rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full">
+                <div className="bg-black px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                  <div className="flex-col">
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                       <Dialog.Title
                         as="h3"
-                        className="text-lg leading-6 font-medium text-gray-900"
+                        className="text-lg leading-6 mb-4 font-medium"
                       >
-                        Cs tracker is loading
+                        The Cs-tracker Dashboard is loading
                       </Dialog.Title>
                     </div>
-                    <HashLoader size={100} />
+                    <div className="mx-auto">
+                      <TailSpin />
+                    </div>
                   </div>
                 </div>
               </Dialog.Panel>

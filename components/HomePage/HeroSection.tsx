@@ -1,10 +1,10 @@
-import Image from "../Images";
+import Image from "next/image";
 import HeroImage from "../../public/heroImage.avif";
 
 function HeroSection() {
   return (
     <div className="relative">
-      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+      <div className="absolute inset-x-0 bottom-0 h-1/2" />
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
           <div className="absolute inset-0">
@@ -18,7 +18,7 @@ function HeroSection() {
           </div>
           <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-              <span className="block text-white">Master your</span>
+              <span className="block ">Master your</span>
               <span className="block text-indigo-200">
                 Data structures and Algorithms Skills
               </span>

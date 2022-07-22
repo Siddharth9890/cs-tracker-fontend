@@ -9,7 +9,7 @@ import { cacheServerUrl } from "../api";
 
 function HomePage({ subjects }: { subjects: subjectType[] }) {
   return (
-    <div className="bg-gray-100">
+    <div>
       <main>
         <HeroSection />
         <Process />

@@ -3,8 +3,8 @@ import varan from "../../public/varandeep.jpg";
 import shreyas from "../../public/shreyas.png";
 import github from "../../public/github.png";
 import website from "../../public/website.png";
-import Image from "../../components/Images";
 import Head from "next/head";
+import Image from "next/image";
 
 const people = [
   {
@@ -36,14 +36,14 @@ function AboutUs() {
       <Head>
         <title>About Us </title>
       </Head>
-      <div className="bg-white">
+      <>
         <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-12">
             <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
               <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
                 Meet Our Team
               </h2>
-              <p className="text-xl text-gray-500">
+              <p className="text-xl">
                 We are a team of 3 friends trying to build products that help
                 the world!
               </p>
@@ -74,7 +74,7 @@ function AboutUs() {
                             href={person.githubUrl}
                             target="_blank"
                             rel="noreferrer"
-                            className="text-gray-400 hover:text-gray-500"
+                            className="text-indigo-600 hover:text-indigo-700"
                           >
                             <span className="sr-only">Github</span>
                             <Image src={github} alt="Github" />
@@ -99,7 +99,7 @@ function AboutUs() {
             </ul>
           </div>
         </div>
-      </div>
+      </>
     </>
   );
 }

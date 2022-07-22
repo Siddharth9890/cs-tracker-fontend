@@ -16,7 +16,7 @@ function SingleQuestion({ question }: { question: questionType | null }) {
   ) : question === null ? (
     <NoDetailsFound />
   ) : (
-    <div className="h-full bg-white">
+    <div className="h-full">
       <Head>
         <title>{question.question_name}</title>
       </Head>

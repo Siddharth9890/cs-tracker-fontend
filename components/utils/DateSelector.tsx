@@ -15,7 +15,7 @@ function DateSelector({
   setRevisionDate: Dispatch<SetStateAction<Date | null>>;
 }) {
   const cancelButtonRef = useRef(null);
-
+  const date = new Date();
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog
@@ -47,20 +47,22 @@ function DateSelector({
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full">
-                <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <Dialog.Panel className="relative bg-white dark:bg-black rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full">
+                <div className="bg-white dark:bg-black px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                   <div className="sm:flex sm:items-start">
                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                       <Dialog.Title
                         as="h3"
-                        className="text-lg leading-6 font-medium text-gray-900"
+                        className="text-lg leading-6 font-medium text-black dark:text-white"
                       >
                         Select Date
                       </Dialog.Title>
                       <div className="mt-2">
                         <Calendar
+                          className={"text-black"}
                           closeCalendar={true}
                           minDate={new Date()}
+                          maxDate={new Date(date.setMonth(date.getMonth() + 6))}
                           onChange={(value: SetStateAction<Date | null>) =>
                             setRevisionDate(value)
                           }
@@ -69,10 +71,10 @@ function DateSelector({
                     </div>
                   </div>
                 </div>
-                <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <div className="bg-white dark:bg-black px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                   <button
                     type="button"
-                    className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm"
+                    className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 sm:ml-3 sm:w-auto sm:text-sm"
                     onClick={() => setOpen(false)}
                   >
                     Ok

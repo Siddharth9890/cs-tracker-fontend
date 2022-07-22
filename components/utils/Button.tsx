@@ -15,7 +15,7 @@ function Button({
     <button
       disabled
       type="button"
-      className="inline-flex cursor-not-allowed items-center px-2 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+      className="inline-flex cursor-not-allowed items-center px-2 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700"
     >
       <svg
         className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
@@ -43,7 +43,7 @@ function Button({
     <button
       type="button"
       onClick={onClick}
-      className={`inline-flex items-center px-2 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-${bgColour}-600 hover:bg-${bgColour}-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-${bgColour}-500`}
+      className={`inline-flex items-center px-2 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-${bgColour}-600 hover:bg-${bgColour}-700`}
     >
       {text}
     </button>

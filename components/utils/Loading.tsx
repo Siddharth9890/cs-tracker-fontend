@@ -1,9 +1,9 @@
-import HashLoader from "react-spinners/HashLoader";
+import { TailSpin } from "react-loading-icons";
 
 function Loading() {
   return (
     <div className="flex justify-center  h-screen">
-      <HashLoader size={100} />
+      <TailSpin />
     </div>
   );
 }

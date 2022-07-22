@@ -87,12 +87,12 @@ function SingleQuestionDescription({ question }: { question: questionType }) {
     <>
       <div className="h-full flex flex-col">
         <div className="min-h-0 flex-1 flex overflow-hidden">
-          <main className="min-w-0 flex-1 border-t border-gray-200 xl:flex">
+          <main className="min-w-0 flex-1 border-t border-black dark:border-white border-2 rounded-lg xl:flex">
             <section
               aria-labelledby="message-heading"
               className="min-w-0 flex-1 h-full flex flex-col overflow-hidden xl:order-last"
             >
-              <div className="flex-shrink-0 bg-white border-b border-gray-200">
+              <div className="flex-shrink-0 border-black dark:border-white border-2 rounded-lg">
                 <div className="h-16 flex flex-col justify-center">
                   <div className="px-4 sm:px-6 lg:px-8">
                     <div className="py-3 flex justify-between">
@@ -103,10 +103,10 @@ function SingleQuestionDescription({ question }: { question: questionType }) {
                               href={question.youtube_video_link}
                               target={"_blank"}
                               rel="noreferrer"
-                              className="relative inline-flex items-center mr-4 px-4 py-2 rounded-l-md border shadow-sm border-transparent  text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                              className="relative inline-flex items-center mr-4 px-4 py-2 rounded-l-md border shadow-sm border-transparent  text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700"
                             >
                               <ReplyIcon
-                                className="mr-2.5 h-5 w-5 text-gray-400"
+                                className="mr-2.5 h-5 w-5"
                                 aria-hidden="true"
                               />
                               <span>Solution</span>
@@ -116,10 +116,10 @@ function SingleQuestionDescription({ question }: { question: questionType }) {
                               onClick={() =>
                                 setMotivationButton(!motivationButton)
                               }
-                              className="hidden sm:inline-flex -ml-px mr-4 relative items-center px-4 py-2 border shadow-sm border-transparent  text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                              className="hidden sm:inline-flex -ml-px mr-4 relative items-center px-4 py-2 border shadow-sm border-transparent  text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700"
                             >
                               <PencilIcon
-                                className="mr-2.5 h-5 w-5 text-gray-400"
+                                className="mr-2.5 h-5 w-5"
                                 aria-hidden="true"
                               />
                               <span>Motivation</span>
@@ -127,10 +127,10 @@ function SingleQuestionDescription({ question }: { question: questionType }) {
                             <button
                               type="button"
                               onClick={() => setRevisionButton(!revisionButton)}
-                              className="hidden sm:inline-flex -ml-px relative items-center px-4 py-2 rounded-r-md border shadow-sm border-transparent  text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                              className="hidden sm:inline-flex -ml-px relative items-center px-4 py-2 rounded-r-md border shadow-sm border-transparent  text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700"
                             >
                               <CalendarIcon
-                                className="mr-2.5 h-5 w-5 text-gray-400"
+                                className="mr-2.5 h-5 w-5"
                                 aria-hidden="true"
                               />
                               <span>Revision Date</span>
@@ -158,7 +158,7 @@ function SingleQuestionDescription({ question }: { question: questionType }) {
                             className="-ml-px relative block sm:shadow-sm lg:hidden"
                           >
                             <div>
-                              <Menu.Button className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-900 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-600 focus:border-blue-600 sm:rounded-md sm:px-3">
+                              <Menu.Button className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-900 hover:bg-gray-50 sm:rounded-md sm:px-3">
                                 <span className="sr-only sm:hidden">More</span>
                                 <span className="hidden sm:inline">More</span>
                                 <ChevronDownIcon
@@ -231,7 +231,7 @@ function SingleQuestionDescription({ question }: { question: questionType }) {
                             disabled={leetCodeButton}
                             className={classNames(
                               leetCodeButton ? "cursor-not-allowed" : "",
-                              "relative mr-4 inline-flex items-center px-4 py-2 border shadow-sm border-transparent  text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                              "relative mr-4 inline-flex items-center px-4 py-2 border shadow-sm border-transparent  text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700"
                             )}
                           >
                             <span>leetcode!</span>
@@ -250,13 +250,10 @@ function SingleQuestionDescription({ question }: { question: questionType }) {
               </div>
 
               <div className="min-h-0 flex-1 overflow-y-auto">
-                <div className="bg-white pt-5 pb-6 shadow">
+                <div className="pt-5 pb-6 shadow">
                   <div className="px-4 sm:flex sm:justify-between sm:items-baseline sm:px-6 lg:px-8">
-                    <div className="sm:w-0 sm:flex-1">
-                      <h1
-                        id="message-heading"
-                        className="text-lg font-medium text-gray-900"
-                      >
+                    <div className="sm:w-0 sm:flex-1 ">
+                      <h1 id="message-heading" className="text-lg font-medium">
                         Write some notes to remember {question.question_name}
                       </h1>
                     </div>
@@ -270,7 +267,7 @@ function SingleQuestionDescription({ question }: { question: questionType }) {
               </div>
             </section>
             <aside className="hidden xl:block xl:flex-shrink-0 xl:order-first">
-              <div className="h-full relative flex flex-col w-96 border-r border-gray-200 bg-gray-100">
+              <div className="h-full relative flex flex-col w-96  border-black dark:border-white border-2 rounded-lg ">
                 <Description question={question} />
               </div>
             </aside>

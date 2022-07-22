@@ -20,7 +20,7 @@ function Topics({ topics }: { topics: topicType[] }) {
       <Head>
         <title>{topics[0].under_which_subject}</title>
       </Head>
-      <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">
+      <h2 className="text-2xl font-extrabold tracking-tight">
         Topics for {topics[0].under_which_subject} subject
       </h2>
       <ul
@@ -30,7 +30,7 @@ function Topics({ topics }: { topics: topicType[] }) {
         {topics.map((topic: topicType) => (
           <li
             key={topic.topic_name}
-            className="col-span-1 border bg-white rounded-lg shadow divide-y divide-gray-200"
+            className="col-span-1 border border-black dark:border-white rounded-lg shadow"
           >
             <button
               onClick={() => router.push(`/questions/${topic.topic_name}`)}
@@ -38,14 +38,14 @@ function Topics({ topics }: { topics: topicType[] }) {
               <div className="w-full flex items-center justify-between p-6 space-x-6">
                 <div className="flex-1 truncate">
                   <div className="flex items-center space-x-3">
-                    <h3 className="text-gray-900 text-sm font-medium truncate">
+                    <h3 className="text-base font-medium truncate">
                       {topic.topic_name}
                     </h3>
-                    <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">
+                    <span className="flex-shrink-0 inline-block px-2 py-0.5  text-xs font-medium bg-indigo-700 rounded-full">
                       {topic.question_count}
                     </span>
                   </div>
-                  <p className="mt-1 text-gray-500 text-sm truncate">
+                  <p className="mt-1 text-sm truncate">
                     {topic.topic_description}
                   </p>
                 </div>

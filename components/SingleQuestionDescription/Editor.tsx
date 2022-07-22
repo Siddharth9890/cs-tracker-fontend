@@ -21,34 +21,36 @@ function Editor({
       <Loading />
     </>
   ) : (
-    <>
-      <ReactTrixRTEToolbar
-        toolbarActions={[
-          "bold",
-          "italic",
-          "strike",
-          "heading1",
-          "quote",
-          "code",
-          "bullet",
-          "number",
-          "outdent",
-          "indent",
-          "undo",
-          "redo",
-        ]}
-        toolbarId="react-trix-rte-editor"
-      />
+    <div>
+      <div className="bg-white">
+        <ReactTrixRTEToolbar
+          toolbarActions={[
+            "bold",
+            "italic",
+            "strike",
+            "heading1",
+            "quote",
+            "code",
+            "bullet",
+            "number",
+            "outdent",
+            "indent",
+            "undo",
+            "redo",
+          ]}
+          toolbarId="react-trix-rte-editor"
+        />
+      </div>
       <ReactTrixRTEInput
         toolbarId="react-trix-rte-editor"
-        className="relative border min-h-screen h-full border-gray-300 rounded-lg shadow-sm overflow-hidden focus-within:border-indigo-500 focus-within:ring-1 focus-within:ring-indigo-500"
+        className="relative min-h-screen h-full text-black  dark:text-white rounded-lg shadow-sm overflow-hidden focus-within:border-indigo-500 focus-within:ring-1 focus-within:ring-indigo-500"
         placeholder={
           notes === "" ? "Start typing something no previous notes found" : ""
         }
         onChange={handleChange}
         defaultValue={notes === "" ? "<div></div>" : notes}
       />
-    </>
+    </div>
   );
 }
 export default Editor;
