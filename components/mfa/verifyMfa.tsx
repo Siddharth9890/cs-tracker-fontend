@@ -5,7 +5,7 @@ import useUser from "../../hooks/useUser";
 import ExistingUser from "../../components/mfa/ExistingUser";
 import NewUser from "../../components/mfa/NewUser";
 
-function Mfa() {
+function VerifyMfa() {
   const [user] = useUser();
   const [enabled, setEnabled] = useState(false);
 
@@ -18,4 +18,4 @@ function Mfa() {
   );
 }
 
-export default Mfa;
+export default VerifyMfa;

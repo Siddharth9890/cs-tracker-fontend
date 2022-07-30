@@ -7,7 +7,7 @@ import axios from "../../api";
 import useUser from "../../hooks/useUser";
 import { useRouter } from "next/router";
 import store2 from "store2";
-import Image from "../Images";
+import Image from "next/image";
 
 toast.configure();
 
@@ -101,7 +101,7 @@ function NewUser({
   }, [token]);
 
   return enabled ? (
-    <div className="bg-white">
+    <div className="">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="relative rounded-lg overflow-hidden">
           <div className="absolute inset-0">
@@ -113,15 +113,15 @@ function NewUser({
           </div>
           <div className="relative bg-gray-900 bg-opacity-75 py-32 px-6 sm:py-40 sm:px-12 lg:px-16">
             <div className="relative max-w-3xl mx-auto flex flex-col items-center text-center">
-              <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+              <h2 className="text-3xl font-extrabold tracking-tight  sm:text-4xl">
                 <span className="block sm:inline">Important Update</span>
                 <span className="block sm:inline">About Your Account</span>
               </h2>
-              <p className="text-white">
+              <p className="">
                 This is the backup code keep in in a safe place. If you lost the
                 backup code then you need to contact support.
               </p>
-              <p className="text-white">{backup}</p>
+              <p className="">{backup}</p>
               <label>
                 <input
                   type="checkbox"
@@ -130,7 +130,7 @@ function NewUser({
                   checked={readAgreements}
                   onChange={() => setReadAgreements(!readAgreements)}
                 />
-                <p className="text-white">I Accept the above statement.</p>
+                <p className="">I Accept the above statement.</p>
               </label>
               <button
                 type="submit"
@@ -150,11 +150,11 @@ function NewUser({
       </div>
     </div>
   ) : (
-    <div className="bg-white">
+    <div className="">
       <div className="mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
           <div className="lg:row-end-1 lg:col-span-4">
-            <div className="aspect-w-4 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden">
+            <div className="aspect-w-4  aspect-h-3 rounded-lg overflow-hidden">
               <QRCode
                 value={qrCode}
                 size={400}
@@ -166,14 +166,14 @@ function NewUser({
           <div className="max-w-2xl mx-auto mt-14 sm:mt-16 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-3">
             <div className="flex flex-col-reverse">
               <div className="mt-4">
-                <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+                <h1 className="text-2xl font-extrabold tracking-tight  sm:text-3xl">
                   Scan the QR code and verify it!
                 </h1>
-                <p className="text-sm text-gray-500 mt-2">User {user.email}</p>
+                <p className="text-base mt-2">User {user.email}</p>
               </div>
             </div>
 
-            <p className="text-gray-500 mt-6">
+            <p className=" mt-6">
               To improve account security you need to enable 2 factor auth. You
               can use any app like authy, google auth etc. This is a compulsory
               step to do.
@@ -204,7 +204,7 @@ function NewUser({
                 Verify Otp
               </button>
             </div>
-            <p className="text-gray-500 mt-6">Or copy the hex code</p>
+            <p className="mt-6">Or copy the hex code</p>
             <div>{hexCode}</div>
           </div>
         </div>

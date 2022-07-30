@@ -156,15 +156,16 @@ function Register() {
                     placeholder="example@example.com"
                     required
                     value={email}
-                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-black bg-white text-black focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm   focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
               </div>
-              <HCaptcha
+              {/* <HCaptcha
                 sitekey={process.env.NEXT_PUBLIC_CAPTCHA!}
                 onVerify={(token, ekey) => test(token, ekey)}
               />
+               */}
               <SubmitButton />
             </div>
             <div className="mt-2 text-center text-lg  text-white">

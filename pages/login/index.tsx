@@ -108,8 +108,8 @@ function Login() {
           </h2>
         </div>
 
-        <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div className="bg-indigo-600 hover:bg-indigo-700 py-8 px-4 rounded-2xl shadow-xl sm:rounded-lg sm:px-10">
+        <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md rounded-3xl">
+          <div className="bg-indigo-600 hover:bg-indigo-700  py-8 px-4  shadow-2xl sm:rounded-lg sm:px-10">
             <div className="space-y-6">
               <div>
                 <label
@@ -128,14 +128,15 @@ function Login() {
                     required
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
-                    className="appearance-none block w-full px-3 py-2 placeholder:text-black placeholder:bg-white  rounded-md shadow-sm  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2    rounded-md shadow-sm  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   />
                 </div>
               </div>
-              <HCaptcha
+              {/* <HCaptcha
                 sitekey={process.env.NEXT_PUBLIC_CAPTCHA!}
                 onVerify={(token, ekey) => setToken(token)}
               />
+               */}
               <SubmitButton />
             </div>
             <div className="mt-2 text-center text-lg text-white">
