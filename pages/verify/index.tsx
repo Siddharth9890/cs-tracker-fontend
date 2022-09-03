@@ -1,44 +1,28 @@
-import { Fragment, useState } from "react";
-import { Dialog, RadioGroup, Transition } from "@headlessui/react";
-import { XIcon } from "@heroicons/react/outline";
-import { StarIcon } from "@heroicons/react/solid";
+import { Fragment, useState, useEffect } from "react";
+import { Dialog, Transition } from "@headlessui/react";
 import VerifyEmail from "../../components/verifyEmail";
 import VerifyMfa from "../../components/mfa/verifyMfa";
-
-const product = {
-  name: "Basic Tee 6-Pack ",
-  price: "$192",
-  rating: 3.9,
-  reviewCount: 117,
-  href: "#",
-  imageSrc:
-    "https://tailwindui.com/img/ecommerce-images/product-quick-preview-02-detail.jpg",
-  imageAlt: "Two each of gray, white, and black shirts arranged on table.",
-  colors: [
-    { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
-    { name: "Gray", class: "bg-gray-200", selectedClass: "ring-gray-400" },
-    { name: "Black", class: "bg-gray-900", selectedClass: "ring-gray-900" },
-  ],
-  sizes: [
-    { name: "XXS", inStock: true },
-    { name: "XS", inStock: true },
-    { name: "S", inStock: true },
-    { name: "M", inStock: true },
-    { name: "L", inStock: true },
-    { name: "XL", inStock: true },
-    { name: "XXL", inStock: true },
-    { name: "XXXL", inStock: false },
-  ],
-};
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
+import { useRouter } from "next/router";
 
 export default function Verify() {
-  const [open, setOpen] = useState(true);
-  const [selectedColor, setSelectedColor] = useState(product.colors[0]);
-  const [selectedSize, setSelectedSize] = useState(product.sizes[2]);
+  const router = useRouter();
+  const {
+    query: { email, verified, multi_factor_enabled },
+  } = router;
+  useEffect(() => {
+    if (!email || !verified || !multi_factor_enabled) router.push("/login");
+    if (
+      email === undefined ||
+      verified === undefined ||
+      multi_factor_enabled === undefined
+    )
+      router.push("/login");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const [emailVerify, setEmailVerify] = useState(
+    verified === "true" ? true : false
+  );
 
   return (
     <Transition.Root show={true} as={Fragment}>
@@ -70,7 +54,21 @@ export default function Verify() {
                 <div className="w-full relative flex items-center bg-indigo-700 px-4 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
                   <div className="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:gap-x-8">
                     <div className="sm:col-span-8 lg:col-span-7">
-                      <VerifyMfa />
+                      {!emailVerify && (
+                        <VerifyEmail
+                          emailVerify={emailVerify}
+                          setEmailVerify={setEmailVerify}
+                          email={email?.toString()!}
+                        />
+                      )}
+                      {emailVerify && (
+                        <VerifyMfa
+                          email={email?.toString()!}
+                          multi_factor_enabled={
+                            multi_factor_enabled === "true" ? true : false
+                          }
+                        />
+                      )}
                     </div>
                   </div>
                 </div>

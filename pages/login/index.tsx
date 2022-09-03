@@ -3,15 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-import store2 from "store2";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import CheckingAccount from "../../components/utils/CheckingAccount";
 import logo from "../../public/logo.png";
 import axios from "../../api";
-import { userType } from "../../customTypes";
-import useUser from "../../hooks/useUser";
 
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 
@@ -22,7 +19,6 @@ function classNames(...classes: string[]) {
 toast.configure();
 
 function Login() {
-  const [user, signIn] = useUser();
   const [email, setEmail] = useState("");
   const [token, setToken] = useState("");
   const router = useRouter();
@@ -36,21 +32,16 @@ function Login() {
         "auth/login",
         JSON.stringify({ email })
       );
-      const accessToken = data.body.accessToken;
-
-      const finalUser: userType = {
-        ...data.body.user,
-        accessToken,
-      };
-      signIn(finalUser);
-      store2.session("account", "login-done");
-      if (finalUser.multi_factor_enabled) {
-        router.push("/verify-mfa");
-      } else {
-        router.push("/verify");
-      }
+      const { detailsToSend } = data.body;
+      router.push({
+        pathname: "/verify",
+        query: {
+          email: detailsToSend.email,
+          multi_factor_enabled: detailsToSend.multi_factor_enabled,
+          verified: detailsToSend.verified,
+        },
+      });
     } catch (error: any) {
-      console.log(error);
       let message = "Something went wrong!";
       if (error?.response?.data?.body?.email?._errors) {
         const e = error?.response?.data?.body?.email?._errors;
@@ -109,7 +100,7 @@ function Login() {
         </div>
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md rounded-3xl">
-          <div className="bg-indigo-600 hover:bg-indigo-700  py-8 px-4  shadow-2xl sm:rounded-lg sm:px-10">
+          <div className="bg-indigo-600   py-8 px-4  shadow-2xl sm:rounded-lg sm:px-10">
             <div className="space-y-6">
               <div>
                 <label
@@ -128,7 +119,7 @@ function Login() {
                     required
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
-                    className="appearance-none block w-full px-3 py-2    rounded-md shadow-sm  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2  placeholder-black text-black bg-white  rounded-md shadow-sm  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   />
                 </div>
               </div>

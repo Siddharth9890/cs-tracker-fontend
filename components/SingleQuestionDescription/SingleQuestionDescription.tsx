@@ -20,7 +20,7 @@ function classNames(...classes: string[]) {
 }
 
 function SingleQuestionDescription({ question }: { question: questionType }) {
-  const [user] = useUser();
+  const [user, signIn, signOut, increaseCountOfQuestion] = useUser();
   const [motivationButton, setMotivationButton] = useState(false);
   const [revisionButton, setRevisionButton] = useState(false);
   const [userNotError, setUserNotError] = useState(false);
@@ -72,6 +72,12 @@ function SingleQuestionDescription({ question }: { question: questionType }) {
           completion_date: new Date(Date.now()),
           revision_date: revisionDate ? revisionDate : undefined,
           notes,
+        });
+
+        increaseCountOfQuestion();
+        await axiosPrivate.put("/auth/update", {
+          email: user.email,
+          user: user,
         });
         setSubmitButton(true);
         setRevisionButton(false);

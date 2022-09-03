@@ -7,8 +7,6 @@ import "../styles/globals.css";
 import { store } from "../redux/store";
 import PersistLogin from "../components/PersistentLogin/PersistentLogin";
 import Head from "next/head";
-import Test from "../components/PersistentLogin/Test";
-import store2 from "store2";
 import dynamic from "next/dynamic";
 import { ThemeProvider } from "next-themes";
 
@@ -21,25 +19,16 @@ const DisableReactDevTools = dynamic(
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  const value = store2.session.get("account");
   console.clear();
   console.info(
     "%cUsing this console may allow attackers to impersonate you and steal your information.Do not enter any code.",
     "color:" + "red" + ";font-weight:bold;"
   );
-  if (
-    (value === "mfa-verified" || value === "account-restored") &&
-    (router.pathname === "/register" ||
-      router.pathname === "/login" ||
-      router.pathname === "/verify" ||
-      router.pathname === "/verify-mfa")
-  )
-    router.push("/");
+
   if (
     router.pathname === "/register" ||
     router.pathname === "/login" ||
-    router.pathname === "/verify" ||
-    router.pathname === "/verify-mfa"
+    router.pathname === "/verify"
   ) {
     return (
       <ThemeProvider attribute="class">
@@ -91,7 +80,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           <div className="bg-white flex flex-col min-h-screen dark:bg-black text-black dark:text-white ">
             <Header />
             <PersistLogin />
-            <Test />
             <Component {...pageProps} />
             <Footer />
           </div>

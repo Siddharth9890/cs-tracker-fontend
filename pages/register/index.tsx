@@ -9,7 +9,6 @@ import logo from "../../public/logo.png";
 import axios from "../../api";
 
 import useUser from "../../hooks/useUser";
-import store2 from "store2";
 
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 
@@ -41,13 +40,17 @@ function Register() {
         "auth/signUp",
         JSON.stringify({ user_name: name, email })
       );
-      const accessToken = data.body.accessToken;
-      const finalUser = { ...data.body.user, accessToken };
-      signIn(finalUser);
-      store2.session("account", "login-done");
-      router.push("/verify");
+      const { detailsToSend } = data.body;
+      console.log(detailsToSend);
+      router.push({
+        pathname: "/verify",
+        query: {
+          email: detailsToSend.email,
+          multi_factor_enabled: detailsToSend.multi_factor_enabled,
+          verified: detailsToSend.verified,
+        },
+      });
     } catch (error: any) {
-      console.log(error.response.data.body);
       let message = "Something went wrong!";
       if (error?.response?.data?.body?.email?._errors) {
         const e = error?.response?.data?.body?.email?._errors;
@@ -117,7 +120,7 @@ function Register() {
         </div>
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div className="bg-indigo-600 hover:bg-indigo-700 py-8 px-4 shadow sm:rounded-lg sm:px-10">
+          <div className="bg-indigo-600  py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <div className="space-y-6">
               <div>
                 <label
@@ -131,7 +134,7 @@ function Register() {
                     id="name"
                     name="name"
                     type="name"
-                    placeholder="more than 5 characters"
+                    placeholder="example"
                     autoComplete="current-name"
                     required
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-black text-black bg-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
@@ -156,7 +159,7 @@ function Register() {
                     placeholder="example@example.com"
                     required
                     value={email}
-                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm   focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm  placeholder-black text-black bg-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>

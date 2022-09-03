@@ -21,19 +21,28 @@ const initialState = {
   secret_backup: "",
 };
 
-const reducer = (state: userType = initialState, action: Action): userType => {
+const userReducer = (
+  state: userType = initialState,
+  action: Action
+): userType => {
   switch (action.type) {
     case ActionType.SIGN_IN:
       return { ...state, ...action.payload };
     case ActionType.SIGN_OUT:
       return initialState;
+    case ActionType.INCREASE_TOTAL_QUESTIONS_SOLVED:
+      return {
+        ...state,
+        total_number_of_questions_done_by_user:
+          Number(state.total_number_of_questions_done_by_user) + Number(1),
+      };
     default:
       return state;
   }
 };
 
 const reducers = combineReducers({
-  user: reducer,
+  user: userReducer,
 });
 
 export type RootState = ReturnType<typeof reducers>;

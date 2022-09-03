@@ -1,20 +1,21 @@
 import { useState } from "react";
-import CheckingAccount from "../../components/utils/CheckingAccount";
 
-import useUser from "../../hooks/useUser";
 import ExistingUser from "../../components/mfa/ExistingUser";
 import NewUser from "../../components/mfa/NewUser";
 
-function VerifyMfa() {
-  const [user] = useUser();
+function VerifyMfa({
+  email,
+  multi_factor_enabled,
+}: {
+  email: string;
+  multi_factor_enabled: boolean;
+}) {
   const [enabled, setEnabled] = useState(false);
 
-  return user.email.length === 0 ? (
-    <CheckingAccount page="login" />
-  ) : user.multi_factor_enabled === false ? (
-    <NewUser enabled={enabled} setEnabled={setEnabled} />
+  return multi_factor_enabled === false ? (
+    <NewUser enabled={enabled} setEnabled={setEnabled} email={email} />
   ) : (
-    <ExistingUser enabled={enabled} setEnabled={setEnabled} />
+    <ExistingUser email={email} enabled={enabled} setEnabled={setEnabled} />
   );
 }
 

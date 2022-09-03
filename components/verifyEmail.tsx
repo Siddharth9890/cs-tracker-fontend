@@ -3,9 +3,7 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { InboxInIcon } from "@heroicons/react/outline";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import store2 from "store2";
-import useUser from "../hooks/useUser";
-
+import axios from "../api";
 toast.configure();
 
 function classNames(...classes: string[]) {
@@ -13,29 +11,14 @@ function classNames(...classes: string[]) {
 }
 
 function VerifyEmail({
-  steps,
-  setSteps,
+  email,
   emailVerify,
   setEmailVerify,
 }: {
-  steps: {
-    id: string;
-    name: string;
-    status: string;
-  }[];
-  setSteps: Dispatch<
-    SetStateAction<
-      {
-        id: string;
-        name: string;
-        status: string;
-      }[]
-    >
-  >;
+  email: string;
   emailVerify: boolean;
   setEmailVerify: Dispatch<SetStateAction<boolean>>;
 }) {
-  const [user] = useUser();
   const [sendOtp, setSendOtp] = useState(true);
   const [enteredOtp, setEnteredOtp] = useState("");
   const [actualOtp, setActualOtp] = useState("");
@@ -64,9 +47,26 @@ function VerifyEmail({
     }
   };
 
-  const verifyOtp = (e: any) => {
+  const verifyOtp = async (e: any) => {
     if (enteredOtp === actualOtp) {
-      setEmailVerify(true);
+      // auth/verified/
+      // need to work on it
+      try {
+        const { data } = await axios.post(
+          "auth/validate",
+          JSON.stringify({ email, otp: actualOtp })
+        );
+        setEmailVerify(true);
+      } catch (error) {
+        toast.error("Something went wrong!", {
+          position: "bottom-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          progress: undefined,
+        });
+      }
     } else {
       toast.error("Entered otp is incorrect please check again!", {
         position: "bottom-right",
@@ -89,11 +89,9 @@ function VerifyEmail({
     counter === 0 && setSendOtp(true);
   }, [counter]);
 
-  //   useEffect(() => {
-  //     if (user.email.length > 0) sendOtpFunction();
-  //     else router.push("/login");
-  //     // eslint-disable-next-line react-hooks/exhaustive-deps
-  //   }, []);
+  useEffect(() => {
+    if (email && email.length > 0) sendOtpFunction();
+  }, []);
 
   function SendOtpButton() {
     if (sendOtp) {
@@ -133,7 +131,7 @@ function VerifyEmail({
           Please enter code send to your mail
         </h2>
         <div className="mt-2 text-center">
-          <h3 className="text-center text-xl">{user.email} </h3>
+          <h3 className="text-center text-xl">{email} </h3>
 
           <h4>The mail might be in spam</h4>
         </div>
@@ -156,7 +154,7 @@ function VerifyEmail({
                 type="text"
                 required
                 placeholder="000000"
-                className="appearance-none block w-full px-3 py-2 border  rounded-md shadow-sm  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                className="appearance-none block w-full px-3 py-2 border  placeholder-black text-black bg-white rounded-md shadow-sm  focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 onChange={(e) => setEnteredOtp(e.target.value)}
                 value={enteredOtp}
               />

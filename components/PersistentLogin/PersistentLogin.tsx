@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import store2 from "store2";
 
 import { axiosPrivate } from "../../api";
 import { userType } from "../../customTypes";
@@ -15,7 +14,6 @@ const PersistLogin = () => {
   // and this use effect will run only once
   useEffect(() => {
     let isMounted = true;
-    setTimeout(() => {}, 5000);
     const verifyRefreshToken = async () => {
       try {
         const accessToken = await refresh();
@@ -24,15 +22,8 @@ const PersistLogin = () => {
           ...data.user,
           accessToken,
         };
-        if (
-          finalUser.accessToken.length > 0 &&
-          finalUser.multi_factor_enabled &&
-          store2.session.get("account") === "mfa-verified"
-        )
-          store2.session("account", "account-restored");
         signIn(finalUser);
       } catch (err) {
-        store2.session("account", "clear");
       } finally {
         isMounted && setIsLoading(false);
       }

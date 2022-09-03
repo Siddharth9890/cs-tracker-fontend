@@ -11,4 +11,9 @@ interface SignOutAction {
   payload: null;
 }
 
-export type Action = SignInAction | SignOutAction;
+interface IncreaseTotalQuestionAction {
+  type: ActionType.INCREASE_TOTAL_QUESTIONS_SOLVED;
+  payload: null;
+}
+
+export type Action = SignInAction | SignOutAction | IncreaseTotalQuestionAction;

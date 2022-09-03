@@ -20,3 +20,12 @@ export const signOut = () => {
     });
   };
 };
+
+export const increaseCountOfQuestion = () => {
+  return (dispatch: Dispatch<Action>) => {
+    dispatch({
+      type: ActionType.INCREASE_TOTAL_QUESTIONS_SOLVED,
+      payload: null,
+    });
+  };
+};

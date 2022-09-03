@@ -16,7 +16,7 @@ function Topics({ topics }: { topics: topicType[] }) {
   ) : topics.length === 0 ? (
     <NoDetailsFound />
   ) : (
-    <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div className="max-w-5xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl ">
       <Head>
         <title>{topics[0].under_which_subject}</title>
       </Head>

@@ -7,7 +7,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 import authPic from "../../public/authPic.webp";
 import axios from "../../api";
-import store2 from "store2";
 import useUser from "../../hooks/useUser";
 
 toast.configure();
@@ -16,19 +15,21 @@ function classNames(...classes: string[]) {
 }
 
 function ExistingUser({
+  email,
   enabled,
   setEnabled,
 }: {
+  email: string;
   enabled: boolean;
   setEnabled: Dispatch<SetStateAction<boolean>>;
 }) {
-  const [user] = useUser();
   const [counter, setCounter] = useState(3);
   const [setBackupSwitch, setSetBackupSwitch] = useState(true);
   const [backup, setBackup] = useState("");
   const [token, setToken] = useState("");
   const [disableOtpButton, setDisableOtpButton] = useState(true);
   const [disableBackupButton, setDisableBackupButton] = useState(true);
+  const [user, signIn] = useUser();
 
   const router = useRouter();
 
@@ -59,11 +60,10 @@ function ExistingUser({
       try {
         const { data } = await axios.post(
           "auth/verify-2fa",
-          JSON.stringify({ token })
+          JSON.stringify({ token, email })
         );
         if (data.body.validated === true) {
-          store2.session("account", "mfa-verified");
-          router.push("/");
+          await getUser();
         } else if (data.body.validated === false) {
           toast.error("Entered otp is wrong !.", {
             position: "bottom-right",
@@ -92,16 +92,42 @@ function ExistingUser({
     }
   }
 
+  const getUser = async () => {
+    try {
+      const { data } = await axios.post(
+        "/auth/get-user",
+        JSON.stringify({ email })
+      );
+      if (data.message === "success") {
+        const accessToken = data.body.accessToken;
+        const user = data.body.user;
+        const finalUser = { ...user, accessToken };
+        signIn(finalUser);
+        router.push("/");
+      }
+    } catch (error) {
+      toast.error("Something went wrong please try again!.", {
+        position: "bottom-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        progress: undefined,
+      });
+      router.push("/login");
+    }
+  };
+
   async function checkBackupCode() {
     setDisableBackupButton(true);
 
     try {
       const { data } = await axios.post(
         "auth/verify-backup",
-        JSON.stringify({ backup })
+        JSON.stringify({ backup, email })
       );
       if (data.body.validated === true) {
-        router.push("/");
+        await getUser();
       } else if (data.body.validated === false) {
         toast.error("Account is disabled due to security reasons!.", {
           position: "bottom-right",
@@ -129,9 +155,9 @@ function ExistingUser({
 
   return (
     <div className="">
-      <div className="mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="lg:grid  lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
-          <div className="lg:row-end-1 lg:col-span-4">
+      <div className="min-h-full  flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-md w-full space-y-8">
+          <div className="">
             <div className="aspect-w-4 aspect-h-3 rounded-lg  overflow-hidden">
               <Image
                 src={authPic}
@@ -161,7 +187,7 @@ function ExistingUser({
                       name="account-number"
                       id="account-number"
                       onChange={(e) => setBackup(e.target.value)}
-                      className="w-full border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500"
+                      className="w-full border border-transparent rounded-md py-3 px-8 flex placeholder-black text-black bg-white items-center justify-center text-base font-medium  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500"
                       placeholder="XXX-XX-XXXX"
                     />
                   </div>
@@ -173,7 +199,7 @@ function ExistingUser({
                     className={classNames(
                       disableBackupButton
                         ? "w-full cursor-not-allowed flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-600 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600"
-                        : "w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500"
+                        : "w-full bg-green-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500"
                     )}
                   >
                     Verify Backup Code
@@ -191,7 +217,7 @@ function ExistingUser({
                     </h1>
                   </div>
                 </div>
-                <p className="text-base  mt-2">User {user.email}</p>
+                <p className="text-base  mt-2">User {email}</p>
 
                 <p className=" mt-6">
                   You have {counter} chances to correct enter otp.
@@ -206,7 +232,7 @@ function ExistingUser({
                       type="text"
                       name="account-number"
                       id="account-number"
-                      className="w-full border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500"
+                      className="w-full border border-transparent placeholder-black text-black bg-white rounded-md py-3 px-8 flex items-center justify-center text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500"
                       placeholder="000000"
                       onChange={(e) => setToken(e.target.value)}
                     />
@@ -218,7 +244,7 @@ function ExistingUser({
                     className={classNames(
                       disableOtpButton
                         ? "w-full cursor-not-allowed flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium  bg-gray-600 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600"
-                        : "w-full bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium  hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500"
+                        : "w-full bg-green-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium  hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500"
                     )}
                   >
                     Verify
@@ -250,8 +276,8 @@ function ExistingUser({
                   disabled={setBackupSwitch}
                   className={classNames(
                     setBackupSwitch ? " cursor-not-allowed" : "",
-                    enabled ? "bg-indigo-600" : "bg-gray-200",
-                    "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    enabled ? "bg-green-600" : "bg-gray-200",
+                    "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                   )}
                 >
                   <span
