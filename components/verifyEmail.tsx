@@ -31,7 +31,7 @@ function VerifyEmail({
     try {
        const { data } = await axios.post(
          "auth/send-mail",
-         JSON.stringify({ email: user.email })
+         JSON.stringify({ email })
        );
       setActualOtp(data.body.otp);
       // setActualOtp("111111");
