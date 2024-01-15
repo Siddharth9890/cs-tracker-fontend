@@ -6,7 +6,7 @@ import NoDetailsFound from "../../components/utils/NoDetailsFound";
 import Loading from "../../components/utils/Loading";
 
 import { topicType } from "../../customTypes";
-import axios from "../../api";
+import { cacheServerUrl } from "../../api";
 
 function Topics({ topics }: { topics: topicType[] }) {
   const router = useRouter();
@@ -61,7 +61,7 @@ function Topics({ topics }: { topics: topicType[] }) {
 export default Topics;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const { data } = await axios.get("/topic/DSAAA");
+  const { data } = await cacheServerUrl.get("/topic/DSAAA");
   const paths = data.body.map((topic: topicType) => {
     return {
       params: {
@@ -79,7 +79,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const { topicName } = context.params!;
   let topics: topicType[] = [];
   try {
-    const { data } = await axios.get(`/topic/${topicName}`);
+    const { data } = await cacheServerUrl.get(`/topic/${topicName}`);
     topics = data.body;
   } catch (error) {}
   return {
