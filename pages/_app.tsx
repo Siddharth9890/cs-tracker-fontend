@@ -1,17 +1,20 @@
 import { useRouter } from "next/router";
-import Footer from "../components/Footer/Footer";
 import type { AppProps } from "next/app";
-import Header from "../components/Header/Header";
 import { Provider } from "react-redux";
-import "../styles/globals.css";
-import { store } from "../redux/store";
-import PersistLogin from "../components/PersistentLogin/PersistentLogin";
+import { store } from "../src/redux/store";
+import PersistLogin from "../src/components/PersistentLogin/PersistentLogin";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import { ThemeProvider } from "next-themes";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AuthProvider } from "src/auth/context/amplify/auth-provider";
+import { SettingsProvider } from "src/components/settings/context/settings-provider";
+import ThemeProvider from "src/theme";
+import MotionLazy from "src/components/animate/motion-lazy";
+import SnackbarProvider from "src/components/snackbar/snackbar-provider";
 
 const DisableReactDevTools = dynamic(
-  () => import("../components/utils/DisableReactDevTools"),
+  () => import("../src/components/utils/DisableReactDevTools"),
   {
     ssr: false,
   }
@@ -25,32 +28,20 @@ function MyApp({ Component, pageProps }: AppProps) {
     "color:" + "red" + ";font-weight:bold;"
   );
 
-  if (
-    router.pathname === "/register" ||
-    router.pathname === "/login" ||
-    router.pathname === "/verify"
-  ) {
-    return (
-      <ThemeProvider attribute="class">
-        <Provider store={store}>
-          <Head>
-            <title>Cs tracker</title>
-            <meta
-              name="viewport"
-              content="initial-scale=1.0, width=device-width"
-            />
-          </Head>
-          <div className="bg-white dark:bg-black text-black dark:text-white ">
-            <Component {...pageProps} />
-            <Footer />
-          </div>
-        </Provider>
-      </ThemeProvider>
-    );
-  } else {
-    return (
-      <ThemeProvider attribute="class">
-        <Provider store={store}>
+  return (
+    <AuthProvider>
+      <Provider store={store}>
+        <LocalizationProvider dateAdapter={AdapterDateFns}>
+          <SettingsProvider
+            defaultSettings={{
+              themeMode: "light", // 'light' | 'dark'
+              themeDirection: "ltr", //  'rtl' | 'ltr'
+              themeContrast: "default", // 'default' | 'bold'
+              themeLayout: "vertical", // 'vertical' | 'horizontal' | 'mini'
+              themeColorPresets: "default", // 'default' | 'cyan' | 'purple' | 'blue' | 'orange' | 'red'
+              themeStretch: false,
+            }}
+          ></SettingsProvider>
           <DisableReactDevTools />
           <Head>
             <title>Cs tracker</title>
@@ -77,16 +68,20 @@ function MyApp({ Component, pageProps }: AppProps) {
             <meta name="revisit-after" content="8 days" />
             <meta name="author" content="siddharth.a9890@gmail.com"></meta>
           </Head>
-          <div className="bg-white flex flex-col min-h-screen dark:bg-black text-black dark:text-white ">
-            <Header />
-            <PersistLogin />
-            <Component {...pageProps} />
-            <Footer />
+          <div>
+            <ThemeProvider>
+              <MotionLazy>
+                <SnackbarProvider>
+                  <PersistLogin />
+                  <Component {...pageProps} />
+                </SnackbarProvider>
+              </MotionLazy>
+            </ThemeProvider>
           </div>
-        </Provider>
-      </ThemeProvider>
-    );
-  }
+        </LocalizationProvider>
+      </Provider>
+    </AuthProvider>
+  );
 }
 
 export default MyApp;
