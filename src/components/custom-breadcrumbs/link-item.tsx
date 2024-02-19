@@ -1,8 +1,7 @@
 // @mui
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
+import Box from "@mui/material/Box";
+import Link from "next/link";
 // routes
-import { RouterLink } from 'src/routes/components/router-link';
 //
 // import { any } from './types';
 
@@ -18,15 +17,15 @@ export default function BreadcrumbsLink({ link, activeLast, disabled }: any) {
   const { name, href, icon } = link;
 
   const styles = {
-    typography: 'body2',
-    alignItems: 'center',
-    color: 'text.primary',
-    display: 'inline-flex',
+    typography: "body2",
+    alignItems: "center",
+    color: "text.primary",
+    display: "inline-flex",
     ...(disabled &&
       !activeLast && {
-        cursor: 'default',
-        pointerEvents: 'none',
-        color: 'text.disabled',
+        cursor: "default",
+        pointerEvents: "none",
+        color: "text.disabled",
       }),
   };
 
@@ -37,8 +36,8 @@ export default function BreadcrumbsLink({ link, activeLast, disabled }: any) {
           component="span"
           sx={{
             mr: 1,
-            display: 'inherit',
-            '& svg': { width: 20, height: 20 },
+            display: "inherit",
+            "& svg": { width: 20, height: 20 },
           }}
         >
           {icon}
@@ -50,11 +49,7 @@ export default function BreadcrumbsLink({ link, activeLast, disabled }: any) {
   );
 
   if (href) {
-    return (
-      <Link component={RouterLink} href={href} sx={styles}>
-        {renderContent}
-      </Link>
-    );
+    return <Link href={href}>{renderContent}</Link>;
   }
 
   return <Box sx={styles}> {renderContent} </Box>;
