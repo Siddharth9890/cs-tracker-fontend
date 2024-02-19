@@ -1,15 +1,15 @@
-import { useLocation, matchPath } from 'react-router-dom';
-
-// ----------------------------------------------------------------------
+import { useRouter } from "next/router";
 
 type ReturnType = boolean;
 
 export function useActiveLink(path: string, deep = true): ReturnType {
-  const { pathname } = useLocation();
+  const router = useRouter();
+  const { asPath } = router;
 
-  const normalActive = path ? !!matchPath({ path, end: true }, pathname) : false;
-
-  const deepActive = path ? !!matchPath({ path, end: false }, pathname) : false;
+  const normalActive = path ? !!asPath.match(new RegExp(`^${path}$`)) : false;
+  const deepActive = path
+    ? !!asPath.match(new RegExp(`^${path}(\/.*)?$`))
+    : false;
 
   return deep ? deepActive : normalActive;
 }

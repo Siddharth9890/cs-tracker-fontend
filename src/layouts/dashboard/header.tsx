@@ -11,24 +11,12 @@ import { useOffSetTop } from "src/hooks/user-off-set-top";
 import { useResponsive } from "src/hooks/use-responsive";
 // components
 import Logo from "src/components/logo";
-import SvgColor from "src/components/svg-color";
 import { useSettingsContext } from "src/components/settings/context/settings-context";
 //
 import { HEADER, NAV } from "../config-layout";
-import Searchbar from "src/layouts/_common/searchbar/searchbar";
-import AccountPopover from "src/layouts/_common/account-popover";
-import SettingsButton from "src/layouts/_common/settings-button";
-import LanguagePopover from "src/layouts/_common/language-popover";
-import ContactsPopover from "src/layouts/_common/contacts-popover";
-import NotificationsPopover from "src/layouts/_common/notifications-popover/notifications-popver";
+import { Button } from "@mui/material";
 
-// ----------------------------------------------------------------------
-
-type Props = {
-  onOpenNav?: VoidFunction;
-};
-
-export default function Header({ onOpenNav }: Props) {
+export default function Header() {
   const theme = useTheme();
 
   const settings = useSettingsContext();
@@ -45,33 +33,14 @@ export default function Header({ onOpenNav }: Props) {
 
   const renderContent = (
     <>
-      {lgUp && isNavHorizontal && <Logo sx={{ mr: 2.5 }} />}
+      <Logo sx={{ mr: 2.5 }} />
 
-      {!lgUp && (
-        <IconButton onClick={onOpenNav}>
-          <SvgColor src="/assets/icons/navbar/ic_menu_item.svg" />
-        </IconButton>
-      )}
-
-      <Searchbar />
-
-      <Stack
-        flexGrow={1}
-        direction="row"
-        alignItems="center"
-        justifyContent="flex-end"
-        spacing={{ xs: 0.5, sm: 1 }}
-      >
-        <LanguagePopover />
-
-        <NotificationsPopover />
-
-        <ContactsPopover />
-
-        <SettingsButton />
-
-        <AccountPopover />
+      <Stack direction={"row"} justifyContent={"center"} flex={1}>
+        <Button>Explore</Button>
+        <Button>Profile</Button>
+        <Button>Revision</Button>
       </Stack>
+      <Button>Sign In</Button>
     </>
   );
 
@@ -87,7 +56,7 @@ export default function Header({ onOpenNav }: Props) {
           duration: theme.transitions.duration.shorter,
         }),
         ...(lgUp && {
-          width: `calc(100% - ${NAV.W_VERTICAL + 1}px)`,
+          width: `100%`,
           height: HEADER.H_DESKTOP,
           ...(offsetTop && {
             height: HEADER.H_DESKTOP_OFFSET,

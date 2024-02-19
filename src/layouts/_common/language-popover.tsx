@@ -1,30 +1,19 @@
-import { useCallback } from 'react';
-import { m } from 'framer-motion';
+import { useCallback } from "react";
+import { m } from "framer-motion";
 // @mui
-import MenuItem from '@mui/material/MenuItem';
-import IconButton from '@mui/material/IconButton';
+import MenuItem from "@mui/material/MenuItem";
+import IconButton from "@mui/material/IconButton";
 // locales
-import useLocales from 'src/locales/use-locales';
 // components
-import Iconify from 'src/components/iconify';
-import { varHover } from 'src/components/animate/variants/actions';
-import CustomPopover from 'src/components/custom-popver/custom-popover';
-import usePopover  from 'src/components/custom-popver/use-popover';
+import Iconify from "src/components/iconify";
+import { varHover } from "src/components/animate/variants/actions";
+import CustomPopover from "src/components/custom-popver/custom-popover";
+import usePopover from "src/components/custom-popver/use-popover";
 
 // ----------------------------------------------------------------------
 
 export default function LanguagePopover() {
-  const locales = useLocales();
-
   const popover = usePopover();
-
-  const handleChangeLang = useCallback(
-    (newLang: string) => {
-      locales.onChangeLang(newLang);
-      popover.onClose();
-    },
-    [locales, popover]
-  );
 
   return (
     <>
@@ -38,26 +27,16 @@ export default function LanguagePopover() {
           width: 40,
           height: 40,
           ...(popover.open && {
-            bgcolor: 'action.selected',
+            bgcolor: "action.selected",
           }),
         }}
-      >
-        <Iconify icon={locales.currentLang.icon} sx={{ borderRadius: 0.65, width: 28 }} />
-      </IconButton>
+      ></IconButton>
 
-      <CustomPopover open={popover.open} onClose={popover.onClose} sx={{ width: 160 }}>
-        {locales.allLangs.map((option) => (
-          <MenuItem
-            key={option.value}
-            selected={option.value === locales.currentLang.value}
-            onClick={() => handleChangeLang(option.value)}
-          >
-            <Iconify icon={option.icon} sx={{ borderRadius: 0.65, width: 28 }} />
-
-            {option.label}
-          </MenuItem>
-        ))}
-      </CustomPopover>
+      <CustomPopover
+        open={popover.open}
+        onClose={popover.onClose}
+        sx={{ width: 160 }}
+      ></CustomPopover>
     </>
   );
 }

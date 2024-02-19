@@ -1,10 +1,9 @@
 import { forwardRef } from "react";
 // @mui
 import { useTheme } from "@mui/material/styles";
-import Link from "@mui/material/Link";
+import Link from "next/link";
 import Box, { BoxProps } from "@mui/material/Box";
 // routes
-import { RouterLink } from "../routes/components/router-link";
 
 // ----------------------------------------------------------------------
 
@@ -94,11 +93,7 @@ const Logo = forwardRef<HTMLDivElement, Props>(
       return logo;
     }
 
-    return (
-      <Link component={RouterLink} href="/" sx={{ display: "contents" }}>
-        {logo}
-      </Link>
-    );
+    return <Link href="/">{logo}</Link>;
   }
 );
 

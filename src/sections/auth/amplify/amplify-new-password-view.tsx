@@ -55,7 +55,7 @@ export default function AmplifyNewPasswordView() {
 
   const defaultValues = {
     code: "",
-    email: email || "",
+    email: "",
     password: "",
     confirmPassword: "",
   };

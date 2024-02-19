@@ -1,5 +1,6 @@
 // sections
 import AuthClassicLayout from "src/layouts/auth/classic";
+import AuthModernLayout from "src/layouts/auth/modern";
 import AmplifyLoginView from "src/sections/auth/amplify/amplify-login-view";
 
 // ----------------------------------------------------------------------

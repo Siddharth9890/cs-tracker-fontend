@@ -10,7 +10,8 @@ interface RouterLinkProps extends Omit<LinkProps, "to"> {
 export const RouterLink = forwardRef<HTMLAnchorElement, RouterLinkProps>(
   ({ href, ...other }, ref) => (
     <Link href={href} {...other}>
-      S
+      <>
+      </>
     </Link>
   )
 );

@@ -1,10 +1,10 @@
-import { useMemo } from 'react';
-import { useLocation } from 'react-router-dom';
-
-// ----------------------------------------------------------------------
+import { useMemo } from "react";
+import { useRouter } from "next/router";
 
 export function usePathname() {
-  const { pathname } = useLocation();
+  const router = useRouter();
 
-  return useMemo(() => pathname, [pathname]);
+  const pathname = useMemo(() => router.asPath, [router.asPath]);
+
+  return pathname;
 }
