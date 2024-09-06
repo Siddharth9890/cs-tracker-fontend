@@ -1,0 +1,236 @@
+import { useState, useCallback } from "react";
+import { alpha } from "@mui/material/styles";
+import {
+  Tabs,
+  Card,
+  Table,
+  Button,
+  Container,
+  TableBody,
+  TableContainer,
+} from "@mui/material";
+
+import TableFiltersResult from "./table/table-filter-result";
+import { routes } from "@/routes/routes";
+import QuestionTableRow from "./table/table-row";
+import { TableEmptyRows } from "./table/table-empty-rows";
+import { TableHeadCustom } from "./table/table-head-custom";
+import { TableNoData } from "./table/table-no-data";
+import { TablePaginationCustom } from "./table/table-pagination-custom";
+import { useTable } from "./table/use-table";
+import { getComparator, emptyRows } from "./table/utils";
+import CustomBreadcrumbs from "./custom-breadcrumbs/custom-breadcrumbs";
+import Scrollbar from "./scrollbar/scrollbar";
+import { Question } from "@/types";
+
+const TABLE_HEAD = [
+  { id: "question-name", label: "Question Name" },
+  { id: "link", label: "Link", width: 180 },
+  { id: "note", label: "Note", width: 180 },
+  { id: "book-mark", label: "Book Mark", width: 180 },
+  { id: "revision-date", label: "Revision Date", width: 180 },
+];
+
+const defaultFilters: any = {
+  name: "",
+  role: [],
+  status: "all",
+};
+
+export default function TopicListView() {
+  const table = useTable();
+
+  const [tableData, setTableData] = useState<Question[]>([
+    {
+      name: "reverse a linked list",
+      bookMark: false,
+      link: "https://github.com/Gateway-DAO/dashboard-next/blob/develop/src/constants/routes.js",
+      note: "",
+      revisionDate: null,
+    },
+    {
+      name: "reverse a linked list",
+      bookMark: false,
+      link: "https://github.com/Gateway-DAO/dashboard-next/blob/develop/src/constants/routes.js",
+      note: "",
+      revisionDate: null,
+    },
+    {
+      name: "reverse a linked list",
+      bookMark: false,
+      link: "https://github.com/Gateway-DAO/dashboard-next/blob/develop/src/constants/routes.js",
+      note: "",
+      revisionDate: null,
+    },
+  ]);
+
+  const [filters, setFilters] = useState(defaultFilters);
+
+  const dataFiltered = applyFilter({
+    inputData: tableData,
+    comparator: getComparator(table.order, table.orderBy),
+    filters,
+  });
+
+  const denseHeight = table.dense ? 52 : 72;
+
+  const notFound = !dataFiltered.length;
+
+  const handleFilters = useCallback(
+    (name: string, value: any) => {
+      table.onResetPage();
+      setFilters((prevState: any) => ({
+        ...prevState,
+        [name]: value,
+      }));
+    },
+    [table]
+  );
+
+  const handleFilterStatus = useCallback(
+    (event: React.SyntheticEvent, newValue: string) => {
+      handleFilters("status", newValue);
+    },
+    [handleFilters]
+  );
+
+  const handleResetFilters = useCallback(() => {
+    setFilters(defaultFilters);
+  }, []);
+
+  return (
+    <>
+      <Container maxWidth={"lg"}>
+        <CustomBreadcrumbs
+          heading="List"
+          links={[
+            { name: "Dashboard", href: routes.home },
+            { name: "Sheet", href: routes.sheet },
+            { name: "List" },
+          ]}
+          sx={{
+            mb: { xs: 3, md: 5 },
+          }}
+        />
+
+        <Card>
+          <Tabs
+            value={filters.status}
+            onChange={handleFilterStatus}
+            sx={{
+              px: 2.5,
+              boxShadow: (theme) =>
+                `inset 0 -2px 0 0 ${alpha(theme.palette.grey[500], 0.08)}`,
+            }}
+          ></Tabs>
+
+          {true && (
+            <TableFiltersResult
+              filters={filters}
+              onFilters={handleFilters}
+              //
+              onResetFilters={handleResetFilters}
+              //
+              results={dataFiltered.length}
+              sx={{ p: 2.5, pt: 0 }}
+            />
+          )}
+
+          <TableContainer sx={{ position: "relative", overflow: "unset" }}>
+            <Scrollbar>
+              <Table
+                size={table.dense ? "small" : "medium"}
+                sx={{ minWidth: 960 }}
+              >
+                <TableHeadCustom
+                  order={table.order}
+                  orderBy={table.orderBy}
+                  headLabel={TABLE_HEAD}
+                  rowCount={tableData.length}
+                  numSelected={table.selected.length}
+                  onSort={table.onSort}
+                />
+
+                <TableBody>
+                  {dataFiltered
+                    .slice(
+                      table.page * table.rowsPerPage,
+                      table.page * table.rowsPerPage + table.rowsPerPage
+                    )
+                    .map((row) => (
+                      <QuestionTableRow
+                        key={row.id}
+                        row={row}
+                        selected={table.selected.includes(row.id)}
+                        onSelectRow={() => table.onSelectRow(row.id)}
+                      />
+                    ))}
+
+                  <TableEmptyRows
+                    height={denseHeight}
+                    emptyRows={emptyRows(
+                      table.page,
+                      table.rowsPerPage,
+                      tableData.length
+                    )}
+                  />
+
+                  <TableNoData notFound={notFound} />
+                </TableBody>
+              </Table>
+            </Scrollbar>
+          </TableContainer>
+
+          <TablePaginationCustom
+            count={dataFiltered.length}
+            page={table.page}
+            rowsPerPage={table.rowsPerPage}
+            onPageChange={table.onChangePage}
+            onRowsPerPageChange={table.onChangeRowsPerPage}
+            //
+            dense={table.dense}
+            onChangeDense={table.onChangeDense}
+          />
+        </Card>
+      </Container>
+    </>
+  );
+}
+
+function applyFilter({
+  inputData,
+  comparator,
+  filters,
+}: {
+  inputData: any[];
+  comparator: (a: any, b: any) => number;
+  filters: any;
+}) {
+  const { name, status, role } = filters;
+
+  const stabilizedThis = inputData.map((el, index) => [el, index] as const);
+
+  stabilizedThis.sort((a, b) => {
+    const order = comparator(a[0], b[0]);
+    if (order !== 0) return order;
+    return a[1] - b[1];
+  });
+
+  inputData = stabilizedThis.map((el) => el[0]);
+
+  if (name) {
+    inputData = inputData.filter(
+      (user) => user.name.toLowerCase().indexOf(name.toLowerCase()) !== -1
+    );
+  }
+
+  if (status !== "all") {
+    inputData = inputData.filter((user) => user.status === status);
+  }
+
+  if (role.length) {
+    inputData = inputData.filter((user) => role.includes(user.role));
+  }
+
+  return inputData;
+}

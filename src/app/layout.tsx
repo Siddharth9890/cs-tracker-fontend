@@ -1,8 +1,8 @@
+import { darkTheme, lightTheme } from "@/theme/theme";
+import { Container, CssBaseline, ThemeProvider } from "@mui/material";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import LayoutHeader from "./components/header";
+import Main from "./components/main";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <ThemeProvider theme={darkTheme}>
+          <CssBaseline />
+          <LayoutHeader />
+          <Container component="main" sx={{ py: 4 }}>
+            <Main>{children}</Main>
+          </Container>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
