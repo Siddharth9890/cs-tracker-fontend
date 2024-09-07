@@ -6,7 +6,8 @@ export type Topic = {
 
 export type Question = {
   name: string;
-  link: string;
+  solvingLink: string;
+  solutionLink: string;
   bookMark: boolean;
   revisionDate: null | Date;
   note: string;

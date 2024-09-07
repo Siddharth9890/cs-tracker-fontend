@@ -25,7 +25,9 @@ export default function TopicDetails({ topics }: Props) {
           spacing={2}
           key={index}
           sx={{ p: 3 }}
-          onClick={() => router.push(`/${topic.name}`)}
+          onClick={() =>
+            router.push(`/${topic.name}`.toLowerCase().replace(/\s+/g, "-"))
+          }
         >
           <Stack spacing={2}>
             <ListItemText

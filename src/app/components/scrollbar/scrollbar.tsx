@@ -6,6 +6,7 @@ import { StyledRootScrollbar, StyledScrollbar } from "./styles";
 
 // ----------------------------------------------------------------------
 
+// @es-lint
 const Scrollbar = forwardRef<HTMLDivElement, any>(
   ({ children, sx, ...other }, ref) => {
     const userAgent =

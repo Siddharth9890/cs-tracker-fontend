@@ -1,11 +1,13 @@
+import Link from "next/link";
+import { TableRow, Checkbox, TableCell, ListItemText } from "@mui/material";
+import BookmarkBorderOutlinedIcon from "@mui/icons-material/BookmarkBorderOutlined";
+import BookmarkOutlinedIcon from "@mui/icons-material/BookmarkOutlined";
+import NoteAddOutlinedIcon from "@mui/icons-material/NoteAddOutlined";
+import EditNoteOutlinedIcon from "@mui/icons-material/EditNoteOutlined";
+import LaunchIcon from "@mui/icons-material/Launch";
+
 import { Question } from "@/types";
-import {
-  Avatar,
-  TableRow,
-  Checkbox,
-  TableCell,
-  ListItemText,
-} from "@mui/material";
+import { fDate } from "@/utils/format-date";
 
 type Props = {
   selected: boolean;
@@ -18,7 +20,7 @@ export default function QuestionTableRow({
   selected,
   onSelectRow,
 }: Props) {
-  const { name, bookMark, link, note, revisionDate } = row;
+  const { name, bookMark, solvingLink, solutionLink, note, revisionDate } = row;
 
   return (
     <>
@@ -27,9 +29,7 @@ export default function QuestionTableRow({
           <Checkbox checked={selected} onClick={onSelectRow} />
         </TableCell>
 
-        <TableCell sx={{ display: "flex", alignItems: "center" }}>
-          {/* <Avatar alt={name} src={avatarUrl} sx={{ mr: 2 }} /> */}
-
+        <TableCell sx={{ alignItems: "center" }}>
           <ListItemText
             primary={name}
             primaryTypographyProps={{ typography: "body2" }}
@@ -40,11 +40,40 @@ export default function QuestionTableRow({
           />
         </TableCell>
 
-        <TableCell sx={{ whiteSpace: "nowrap" }}>{bookMark}</TableCell>
+        <TableCell sx={{ whiteSpace: "nowrap" }}>
+          <Link
+            target="_blank"
+            passHref
+            href={solvingLink}
+            style={{ textDecoration: "none" }}
+          >
+            <LaunchIcon
+              sx={{
+                color: "text.disabled",
+                fontSize: "body2.fontSize",
+                position: "relative",
+                top: 3.5,
+                left: 8,
+              }}
+            />
+          </Link>
+        </TableCell>
 
-        <TableCell sx={{ whiteSpace: "nowrap" }}>{link}</TableCell>
+        <TableCell sx={{ whiteSpace: "nowrap" }}>
+          {note.length === 0 ? (
+            <NoteAddOutlinedIcon />
+          ) : (
+            <EditNoteOutlinedIcon />
+          )}
+        </TableCell>
 
-        <TableCell sx={{ whiteSpace: "nowrap" }}>{note}</TableCell>
+        <TableCell sx={{ whiteSpace: "nowrap" }}>
+          {bookMark ? <BookmarkOutlinedIcon /> : <BookmarkBorderOutlinedIcon />}
+        </TableCell>
+
+        <TableCell sx={{ whiteSpace: "nowrap" }}>
+          {revisionDate === null ? "-" : fDate(revisionDate)}
+        </TableCell>
       </TableRow>
     </>
   );

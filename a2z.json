@@ -1,0 +1,4346 @@
+[
+  {
+    "name": "Know Basic Maths",
+    "description": "",
+    "questions": [
+      {
+        "name": "Count Digits",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/count-digits5716/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 0
+      },
+      {
+        "name": "Reverse a Number",
+        "solvingLink": "https://leetcode.com/problems/reverse-integer/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 1
+      },
+      {
+        "name": "Check Palindrome",
+        "solvingLink": "https://leetcode.com/problems/palindrome-number/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 2
+      },
+      {
+        "name": "GCD or HCF",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/lcm-and-gcd4516/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 3
+      },
+      {
+        "name": "Armstrong Number",
+        "solvingLink": "https://leetcode.com/problems/armstrong-number/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 4
+      },
+      {
+        "name": "Print all Divisor",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/sum-of-all-divisors-from-1-to-n4738/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 5
+      },
+      {
+        "name": "Check for Prime",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 6
+      }
+    ]
+  },
+  {
+    "name": "Learn Basic Recursion",
+    "description": "",
+    "questions": [
+      {
+        "name": "Understand recursion by print something N times",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1",
+        "solutionLink": "https://www.youtube.com/watch?v=yVdKa8dnKiE&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 7
+      },
+      {
+        "name": "Print name N times using recursion",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/print-gfg-n-times/1",
+        "solutionLink": "https://www.youtube.com/watch?v=un6PLygfXrA&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 8
+      },
+      {
+        "name": "Print 1 to N using recursion",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1",
+        "solutionLink": "https://www.youtube.com/watch?v=un6PLygfXrA&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 9
+      },
+      {
+        "name": "Print N to 1 using recursion",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/print-n-to-1-without-loop/1",
+        "solutionLink": "https://www.youtube.com/watch?v=un6PLygfXrA&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=2",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 10
+      },
+      {
+        "name": "Sum of first N numbers",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/sum-of-first-n-terms5843/1",
+        "solutionLink": "https://www.youtube.com/watch?v=69ZCDFy-OUo&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=3",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 11
+      },
+      {
+        "name": "Factorial of N numbers",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n3548/0?problemType=functional&difficulty[]=-1&page=1&query=problemTypefunctionaldifficulty[]-1page1",
+        "solutionLink": "https://www.youtube.com/watch?v=69ZCDFy-OUo&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=3",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 12
+      },
+      {
+        "name": "Reverse and Array",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/reverse-an-array/0",
+        "solutionLink": "https://www.youtube.com/watch?v=twuC1F6gLI8&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 13
+      },
+      {
+        "name": "Check if a string is palindrome or not",
+        "solvingLink": "https://leetcode.com/problems/valid-palindrome/",
+        "solutionLink": "https://www.youtube.com/watch?v=twuC1F6gLI8&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 14
+      },
+      {
+        "name": "Fibonacci Number",
+        "solvingLink": "https://leetcode.com/problems/fibonacci-number/",
+        "solutionLink": "https://www.youtube.com/watch?v=kvRjNm4rVBE&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=5",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 15
+      }
+    ]
+  },
+  {
+    "name": "Learn Basic Hashing",
+    "description": "",
+    "questions": [
+      {
+        "name": "Count Frequencies of Array Elements",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/0",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 16
+      },
+      {
+        "name": "Find the Highest/Lowest Frequency Element",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 17
+      }
+    ]
+  },
+  {
+    "name": "Sorting-I",
+    "description": "",
+    "questions": [
+      {
+        "name": "Selection Sort",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/selection-sort/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 18
+      },
+      {
+        "name": "Bubble Sort",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/bubble-sort/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 19
+      },
+      {
+        "name": "Insertion Sort",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/insertion-sort/0?category[]=Algorithms&page=1&query=category[]Algorithmspage1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 20
+      }
+    ]
+  },
+  {
+    "name": "Sorting-II",
+    "description": "",
+    "questions": [
+      {
+        "name": "Merge Sort",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/merge-sort/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 21
+      },
+      {
+        "name": "Recursive Bubble Sort",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/bubble-sort/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 22
+      },
+      {
+        "name": "Recursive Insertion Sort",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/insertion-sort/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 23
+      },
+      {
+        "name": "Quick Sort",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/quick-sort/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 24
+      }
+    ]
+  },
+  {
+    "name": "Easy",
+    "description": "Easy -> Medium -> Hard",
+    "questions": [
+      {
+        "name": "Largest Element in an Array",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/largest-element-in-array4009/0",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 25
+      },
+      {
+        "name": "Second Largest Element in an Array without sorting",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/second-largest3735/1",
+        "solutionLink": "",
+        "bookmark": true,
+        "note": "",
+        "revisionDate": null,
+        "id": 26
+      },
+      {
+        "name": "Check if the array is sorted",
+        "solvingLink": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/#:~:text=Input%3A%20nums%20%3D%20%5B2%2C,no%20rotation)%20to%20make%20nums.",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 27
+      },
+      {
+        "name": "Remove duplicates from Sorted array",
+        "solvingLink": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/#:~:text=Input%3A%20nums%20%3D%20%5B0%2C,%2C%203%2C%20and%204%20respectively.",
+        "solutionLink": "",
+        "bookmark": true,
+        "note": "check the solution it should be if nums are not equal then incre i and replace them. but if are equal j increments and then replacing the duplicate one",
+        "revisionDate": null,
+        "id": 28
+      },
+      {
+        "name": "Left Rotate an array by one place",
+        "solvingLink": "https://leetcode.com/problems/rotate-array/",
+        "solutionLink": "",
+        "bookmark": true,
+        "note": "in leetcode it is right rotation and in gfg it is left rotation so sequence changes.\n// leet code:- [1,2,3,4,5,6,7]=>[7,6,5,4,3,2,1]=> [5,6,7,1,2,3,4]\n        // gfg:- [1,2,3,4,5,6,7]=> [2,1,7,6,5,4,3] => [3,4,5,6,7,1,2]",
+        "revisionDate": null,
+        "id": 29
+      },
+      {
+        "name": "Left rotate an array by D places",
+        "solvingLink": "https://leetcode.com/problems/rotate-array/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 30
+      },
+      {
+        "name": "Move Zeros to end",
+        "solvingLink": "https://leetcode.com/problems/move-zeroes/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 31
+      },
+      {
+        "name": "Linear Search",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/who-will-win-1587115621/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 32
+      },
+      {
+        "name": "Find the Union and intersection of two sorted arrays",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 33
+      },
+      {
+        "name": "Find missing number in an array",
+        "solvingLink": "https://leetcode.com/problems/missing-number/",
+        "solutionLink": "https://youtu.be/5nMGY4VUoRY",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 34
+      },
+      {
+        "name": "Maximum Consecutive Ones",
+        "solvingLink": "https://leetcode.com/problems/max-consecutive-ones/",
+        "solutionLink": "https://youtu.be/Mo33MjjMlyA",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 35
+      },
+      {
+        "name": "Subarray with given sum",
+        "solvingLink": "https://leetcode.com/problems/subarray-sum-equals-k/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 36
+      },
+      {
+        "name": "Find the Missing Number",
+        "solvingLink": "https://www.geeksforgeeks.org/find-the-missing-number/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 37
+      },
+      {
+        "name": "Find the number that appears once, and other numbers twice.",
+        "solvingLink": "https://leetcode.com/problems/single-number/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 38
+      },
+      {
+        "name": "Search an element in a 2D matrix",
+        "solvingLink": "https://leetcode.com/problems/search-a-2d-matrix/",
+        "solutionLink": "https://youtu.be/ZYpYur0znng",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 39
+      },
+      {
+        "name": "Find the row with maximum number of 1’s",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/row-with-max-1s0023/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 40
+      }
+    ]
+  },
+  {
+    "name": "Medium",
+    "description": "Easy -> Medium -> Hard",
+    "questions": [
+      {
+        "name": "2Sum Problem",
+        "solvingLink": "https://leetcode.com/problems/two-sum/",
+        "solutionLink": "https://youtu.be/dRUpbt8vHpo",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 41
+      },
+      {
+        "name": "Sort an array of 0’s 1’s and 2’s",
+        "solvingLink": "https://leetcode.com/problems/sort-colors/",
+        "solutionLink": "https://www.youtube.com/watch?v=oaVa-9wmpns&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=2",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 42
+      },
+      {
+        "name": "Majority Element (>n/2 times)",
+        "solvingLink": "https://leetcode.com/problems/majority-element/",
+        "solutionLink": "https://www.youtube.com/watch?v=AoX3BPWNnoE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=16",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 43
+      },
+      {
+        "name": "Kadane’s Algorithm, maximum subarray sum",
+        "solvingLink": "https://leetcode.com/problems/maximum-subarray/",
+        "solutionLink": "https://www.youtube.com/watch?v=w_KEocd__20&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=5",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 44
+      },
+      {
+        "name": "Print subarray with maximum subarray sum (extended version of above problem)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/max-sum-in-sub-arrays0824/0?category=",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 45
+      },
+      {
+        "name": "Stock Buy and Sell",
+        "solvingLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        "solutionLink": "https://www.youtube.com/watch?v=eMSfBgbiEjk&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=11",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 46
+      },
+      {
+        "name": "Rearrange the array in alternating positive and negative items",
+        "solvingLink": "https://leetcode.com/problems/rearrange-array-elements-by-sign/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 47
+      },
+      {
+        "name": "Next Permutation",
+        "solvingLink": "https://leetcode.com/problems/next-permutation/",
+        "solutionLink": "https://www.youtube.com/watch?v=LuLCLgMElus&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=9",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 48
+      },
+      {
+        "name": "Leaders in an Array problem",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 49
+      },
+      {
+        "name": "Longest Consecutive Sequence in an Array",
+        "solvingLink": "https://leetcode.com/problems/longest-consecutive-sequence/solution/",
+        "solutionLink": "https://youtu.be/qgizvmgeyUM",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 50
+      },
+      {
+        "name": "Set Matrix Zeros",
+        "solvingLink": "https://leetcode.com/problems/set-matrix-zeroes/",
+        "solutionLink": "https://www.youtube.com/watch?v=M65xBewcqcI&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=7",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 51
+      },
+      {
+        "name": "Rotate Matrix by 90 degrees",
+        "solvingLink": "https://leetcode.com/problems/rotate-image/",
+        "solutionLink": "https://youtu.be/Y72QeX0Efxw",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 52
+      },
+      {
+        "name": "Print the matrix in spiral manner",
+        "solvingLink": "https://leetcode.com/problems/spiral-matrix/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 53
+      }
+    ]
+  },
+  {
+    "name": "Hard",
+    "description": "Easy -> Medium -> Hard",
+    "questions": [
+      {
+        "name": "Pascal’s Triangle",
+        "solvingLink": "https://leetcode.com/problems/pascals-triangle/",
+        "solutionLink": "https://www.youtube.com/watch?v=6FLvhQjZqvM&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=8",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 54
+      },
+      {
+        "name": "Majority Element (n/3 times)",
+        "solvingLink": "https://leetcode.com/problems/majority-element-ii/",
+        "solutionLink": "https://www.youtube.com/watch?v=yDbkQd9t2ig&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=17",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 55
+      },
+      {
+        "name": "3-Sum Problem",
+        "solvingLink": "https://leetcode.com/problems/3sum/",
+        "solutionLink": "https://www.youtube.com/watch?v=onLoX6Nhvmg&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=41",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 56
+      },
+      {
+        "name": "4-Sum Problem",
+        "solvingLink": "https://leetcode.com/problems/4sum/",
+        "solutionLink": "https://www.youtube.com/watch?v=4ggF3tXIAp0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=21",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 57
+      },
+      {
+        "name": "Largest Subarray with 0 Sum",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1?category[]=Hash&category[]=Hash&company[]=Amazon&company[]=Amazon&page=1&query=category[]Hashcompany[]Amazonpage1company[]Amazoncategory[]Hash",
+        "solutionLink": "https://www.youtube.com/watch?v=xmguZ6GbatA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=23",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 58
+      },
+      {
+        "name": "Count number of subarrays with given xor K",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/subsets-with-xor-value2023/1",
+        "solutionLink": "https://www.youtube.com/watch?v=lO9R5CaGRPY&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=25",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 59
+      },
+      {
+        "name": "Merge Overlapping Subintervals",
+        "solvingLink": "https://leetcode.com/problems/merge-intervals/",
+        "solutionLink": "https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 60
+      },
+      {
+        "name": "Merge two sorted arrays without extra space",
+        "solvingLink": "https://leetcode.com/problems/merge-sorted-array/",
+        "solutionLink": "https://www.youtube.com/watch?v=hVl2b3bLzBw&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 61
+      },
+      {
+        "name": "Find the repeating and missing number",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1",
+        "solutionLink": "https://www.youtube.com/watch?v=5nMGY4VUoRY&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=3",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 62
+      },
+      {
+        "name": "Count Inversions",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1",
+        "solutionLink": "https://www.youtube.com/watch?v=kQ1mJlwW-c0",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 63
+      },
+      {
+        "name": "Reverse Pairs",
+        "solvingLink": "https://leetcode.com/problems/reverse-pairs/",
+        "solutionLink": "https://www.youtube.com/watch?v=S6rsAlj_iB4&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=19",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 64
+      },
+      {
+        "name": "Maximum Product Subarray",
+        "solvingLink": "https://leetcode.com/problems/maximum-product-subarray/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 65
+      }
+    ]
+  },
+  {
+    "name": "Learning BS on 1D Arrays",
+    "description": "1D, 2D Arrays, Space Search",
+    "questions": [
+      {
+        "name": "Binary Search to find X in sorted array ",
+        "solvingLink": "https://leetcode.com/problems/binary-search/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 66
+      },
+      {
+        "name": "Implement Lower Bound",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1?track=DSASP-Searching&amp%3BbatchId=154",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 67
+      },
+      {
+        "name": "Implement Upper Bound",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/ceil-the-floor2802/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 68
+      },
+      {
+        "name": "Search Insert Position",
+        "solvingLink": "https://leetcode.com/problems/search-insert-position/#:~:text=Search%20Insert%20Position%20%2D%20LeetCode&text=Given%20a%20sorted%20array%20of,(log%20n)%20runtime%20complexity.",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 69
+      },
+      {
+        "name": "Check if Input array is sorted",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 70
+      },
+      {
+        "name": "Find the first or last occurrence of a given number in a sorted array ",
+        "solvingLink": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 71
+      },
+      {
+        "name": "Count occurrences of a number in a sorted array with duplicates ",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/number-of-occurrence2259/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 72
+      },
+      {
+        "name": "Find peak element",
+        "solvingLink": "https://leetcode.com/problems/find-peak-element/#:~:text=Find%20Peak%20Element%20%2D%20LeetCode&text=A%20peak%20element%20is%20an,to%20any%20of%20the%20peaks.",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 73
+      },
+      {
+        "name": "Search in Rotated Sorted Array I",
+        "solvingLink": "https://leetcode.com/problems/find-peak-element/#:~:text=Find%20Peak%20Element%20%2D%20LeetCode&text=A%20peak%20element%20is%20an,to%20any%20of%20the%20peaks.",
+        "solutionLink": "https://www.youtube.com/watch?v=r3pMQ8-Ad5s&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=64",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 74
+      },
+      {
+        "name": "Search in Rotated Sorted Array II",
+        "solvingLink": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 75
+      },
+      {
+        "name": "Find minimum in Rotated Sorted Array",
+        "solvingLink": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 76
+      },
+      {
+        "name": "Single element in a Sorted Array",
+        "solvingLink": "https://leetcode.com/problems/single-element-in-a-sorted-array/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 77
+      },
+      {
+        "name": "Find kth element of two sorted arrays",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1",
+        "solutionLink": "https://www.youtube.com/watch?v=nv7F4PiLUzo&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=66",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 78
+      },
+      {
+        "name": "Find out how many times has an array been rotated",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/rotation4723/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 79
+      }
+    ]
+  },
+  {
+    "name": "Applying BS on 2D Arrays",
+    "description": "1D, 2D Arrays, Space Search",
+    "questions": [
+      {
+        "name": "Search in a 2D matrix ",
+        "solvingLink": "https://leetcode.com/problems/search-a-2d-matrix/",
+        "solutionLink": "https://youtu.be/ZYpYur0znng",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 80
+      },
+      {
+        "name": "Find Peak Element ",
+        "solvingLink": "https://leetcode.com/problems/find-a-peak-element-ii/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 81
+      },
+      {
+        "name": "Matrix Median",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1",
+        "solutionLink": "https://www.youtube.com/watch?v=63fPPOdIr2c&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=62",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 82
+      }
+    ]
+  },
+  {
+    "name": "Final Answers by BS in Search Space",
+    "description": "1D, 2D Arrays, Space Search",
+    "questions": [
+      {
+        "name": "Find square root of a number in log n",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/square-root/0",
+        "solutionLink": "https://www.youtube.com/watch?v=WjpswYrS2nY&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=62",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 83
+      },
+      {
+        "name": "Find the Nth root of a number using binary search",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/find-nth-root-of-m5843/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 84
+      },
+      {
+        "name": "Koko Eating Bananas",
+        "solvingLink": "https://leetcode.com/problems/koko-eating-bananas/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 85
+      },
+      {
+        "name": "Minimum days to make M bouquets",
+        "solvingLink": "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 86
+      },
+      {
+        "name": "Find the smallest Divisor",
+        "solvingLink": "https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 87
+      },
+      {
+        "name": "Capacity to Ship Packages within D Days",
+        "solvingLink": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 88
+      },
+      {
+        "name": "Median of two sorted arrays",
+        "solvingLink": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+        "solutionLink": "https://www.youtube.com/watch?v=NTop3VTjmxk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=65",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 89
+      },
+      {
+        "name": "Aggressive Cows",
+        "solvingLink": "",
+        "solutionLink": "https://www.youtube.com/watch?v=wSOfYesTBRk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=70",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 90
+      },
+      {
+        "name": "Book Allocation Problem",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1",
+        "solutionLink": "https://www.youtube.com/watch?v=gYmWHvRHu-s&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=69",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 91
+      },
+      {
+        "name": "Split array – Largest Sum",
+        "solvingLink": "https://leetcode.com/problems/split-array-largest-sum/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 92
+      },
+      {
+        "name": "Kth Missing Positive Number",
+        "solvingLink": "https://leetcode.com/problems/kth-missing-positive-number/#:~:text=Given%20an%20array%20arr%20of,13%2C...%5D.",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 93
+      },
+      {
+        "name": "Minimize Max Distance to Gas Station",
+        "solvingLink": "https://leetcode.com/problems/minimize-max-distance-to-gas-station/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 94
+      },
+      {
+        "name": "Median of 2 sorted arrays",
+        "solvingLink": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+        "solutionLink": "https://www.youtube.com/watch?v=NTop3VTjmxk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=65",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 95
+      },
+      {
+        "name": "Kth element of 2 sorted arrays",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1",
+        "solutionLink": "https://www.youtube.com/watch?v=nv7F4PiLUzo&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=66",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 96
+      }
+    ]
+  },
+  {
+    "name": "Basic and Easy String Problems",
+    "description": "Basic and Medium",
+    "questions": [
+      {
+        "name": "Remove outermost Paranthesis",
+        "solvingLink": "https://leetcode.com/problems/remove-outermost-parentheses/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 97
+      },
+      {
+        "name": "Reverse words in a given string / Palindrome Check ",
+        "solvingLink": "https://leetcode.com/problems/reverse-words-in-a-string/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 98
+      },
+      {
+        "name": "Largest odd number in a string",
+        "solvingLink": "https://leetcode.com/problems/largest-odd-number-in-string/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 99
+      },
+      {
+        "name": "Longest Common Prefix",
+        "solvingLink": "https://leetcode.com/problems/longest-common-prefix/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 100
+      },
+      {
+        "name": "Isomorphic String",
+        "solvingLink": "https://leetcode.com/problems/isomorphic-strings/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 101
+      },
+      {
+        "name": "Check whether one string is a rotation of another ",
+        "solvingLink": "https://leetcode.com/problems/rotate-string/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 102
+      },
+      {
+        "name": "Check if two strings are anagram of each other",
+        "solvingLink": "https://leetcode.com/problems/valid-anagram/#:~:text=Given%20two%20strings%20s%20and,the%20original%20letters%20exactly%20once.&text=Constraints%3A,.length%20%3C%3D%205%20*%2010",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 103
+      }
+    ]
+  },
+  {
+    "name": "Medium String Problems",
+    "description": "Basic and Medium",
+    "questions": [
+      {
+        "name": "Sort Characters by frequency",
+        "solvingLink": "https://leetcode.com/problems/sort-characters-by-frequency/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 104
+      },
+      {
+        "name": "Maximum Nesting Depth of Paranthesis",
+        "solvingLink": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 105
+      },
+      {
+        "name": "Roman Number to Integer and vice versa",
+        "solvingLink": "https://leetcode.com/problems/roman-to-integer/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 106
+      },
+      {
+        "name": "Implement Atoi",
+        "solvingLink": "https://leetcode.com/problems/string-to-integer-atoi/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 107
+      },
+      {
+        "name": "Count Number of Substrings",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/count-number-of-substrings4528/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 108
+      },
+      {
+        "name": "Longest Palindromic Substring[Do it without DP]",
+        "solvingLink": "https://leetcode.com/problems/longest-palindromic-substring/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 109
+      },
+      {
+        "name": "Sum of Beauty of all substring",
+        "solvingLink": "https://leetcode.com/problems/sum-of-beauty-of-all-substrings/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 110
+      },
+      {
+        "name": "Reverse Every Word in A String",
+        "solvingLink": "https://leetcode.com/problems/reverse-words-in-a-string/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 111
+      }
+    ]
+  },
+  {
+    "name": "Learn 1D Linked List",
+    "description": "Single/Double LL, Medium, Hard",
+    "questions": [
+      {
+        "name": "Introduction to LinkedList, learn about struct, and how is node represented ",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 112
+      },
+      {
+        "name": "Inserting a node in LinkedList",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/linked-list-insertion-1587115620/0",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 113
+      },
+      {
+        "name": "Deleting a node in LinkedList",
+        "solvingLink": "https://leetcode.com/problems/delete-node-in-a-linked-list/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 114
+      },
+      {
+        "name": "Find the length of the linkedlist [Learn traversal]",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 115
+      },
+      {
+        "name": "Search an element in the linkedList",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 116
+      }
+    ]
+  },
+  {
+    "name": "Learn Doubly Linked List",
+    "description": "Single/Double LL, Medium, Hard",
+    "questions": [
+      {
+        "name": "Introduction to DLL, learn about struct, and how is node represented ",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 117
+      },
+      {
+        "name": "Insert a node in DLL",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 118
+      },
+      {
+        "name": "Delete a node in DLL",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/closest-number5728/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 119
+      },
+      {
+        "name": "Reverse a DLL",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/reverse-a-doubly-linked-list/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 120
+      }
+    ]
+  },
+  {
+    "name": "Medium Problems on Linked List",
+    "description": "Single/Double LL, Medium, Hard",
+    "questions": [
+      {
+        "name": "Middle of a LinkedList [Tortoise Hare Method]",
+        "solvingLink": "https://leetcode.com/problems/middle-of-the-linked-list/",
+        "solutionLink": "https://www.youtube.com/watch?v=sGdwSH8RK-o&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=28",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 121
+      },
+      {
+        "name": "Reverse a LinkedList [Iterative]",
+        "solvingLink": "https://leetcode.com/problems/reverse-linked-list/",
+        "solutionLink": "https://www.youtube.com/watch?v=iRtLEoL-r-g&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=27",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 122
+      },
+      {
+        "name": "Reverse a LL [Recursive]",
+        "solvingLink": "https://leetcode.com/problems/reverse-linked-list/",
+        "solutionLink": "https://www.youtube.com/watch?v=iRtLEoL-r-g&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=27",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 123
+      },
+      {
+        "name": "Detect a loop in LL",
+        "solvingLink": "https://leetcode.com/problems/linked-list-cycle/",
+        "solutionLink": "https://www.youtube.com/watch?v=354J83hX7RI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=34",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 124
+      },
+      {
+        "name": "Find the starting point in LL",
+        "solvingLink": "https://leetcode.com/problems/linked-list-cycle-ii/",
+        "solutionLink": "https://www.youtube.com/watch?v=QfbOhn0WZ88&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=37",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 125
+      },
+      {
+        "name": "Length of Loop in LL",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/find-length-of-loop/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 126
+      },
+      {
+        "name": "Check if LL is palindrome or not",
+        "solvingLink": "https://leetcode.com/problems/palindrome-linked-list/",
+        "solutionLink": "https://www.youtube.com/watch?v=-DtNInqFUXs&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=36",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 127
+      },
+      {
+        "name": "Segrregate odd and even nodes in LL",
+        "solvingLink": "https://leetcode.com/problems/odd-even-linked-list/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 128
+      },
+      {
+        "name": "Remove Nth node from the back of the LL",
+        "solvingLink": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        "solutionLink": "https://www.youtube.com/watch?v=Lhu3MsXZy-Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=30",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 129
+      },
+      {
+        "name": "Delete the middle node of LL",
+        "solvingLink": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/#:~:text=You%20are%20given%20the%20head,than%20or%20equal%20to%20x%20.",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 130
+      },
+      {
+        "name": "Sort LL",
+        "solvingLink": "https://leetcode.com/problems/sort-list/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 131
+      },
+      {
+        "name": "Sort a LL of 0’s 1’s and 2’s by changing links",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 132
+      },
+      {
+        "name": "Find the intersection point of Y LL",
+        "solvingLink": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+        "solutionLink": "https://www.youtube.com/watch?v=u4FWXfgS8jw&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=33",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 133
+      },
+      {
+        "name": "Add 1 to a number represented by LL",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 134
+      },
+      {
+        "name": "Add 2 numbers in LL",
+        "solvingLink": "https://leetcode.com/problems/add-two-numbers/",
+        "solutionLink": "https://www.youtube.com/watch?v=LBVsXSMOIk4&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=32",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 135
+      }
+    ]
+  },
+  {
+    "name": "Medium Problems on Doubly Linked List",
+    "description": "Single/Double LL, Medium, Hard",
+    "questions": [
+      {
+        "name": "Delete all occurrences of a key in DLL",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 136
+      },
+      {
+        "name": "Find pairs with given sum in DLL",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/find-pairs-with-given-sum-in-doubly-linked-list/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 137
+      },
+      {
+        "name": "Remove duplicates from sorted DLL",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 138
+      }
+    ]
+  },
+  {
+    "name": "Hard Problems on Linked List",
+    "description": "Single/Double LL, Medium, Hard",
+    "questions": [
+      {
+        "name": "Reverse LL in group of given size K",
+        "solvingLink": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+        "solutionLink": "https://www.youtube.com/watch?v=Of0HPkk3JgI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=34",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 139
+      },
+      {
+        "name": "Rotate a LL",
+        "solvingLink": "https://leetcode.com/problems/rotate-list/description/",
+        "solutionLink": "https://www.youtube.com/watch?v=9VPm6nEbVPA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=39",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 140
+      },
+      {
+        "name": "Flattening of LL",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1",
+        "solutionLink": "https://www.youtube.com/watch?v=ysytSSXpAI0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=38",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 141
+      },
+      {
+        "name": "Clone a Linked List with random and next pointer",
+        "solvingLink": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+        "solutionLink": "https://www.youtube.com/watch?v=VNf6VynfpdM",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 142
+      }
+    ]
+  },
+  {
+    "name": "Get a Strong Hold",
+    "description": "Pattern Wise",
+    "questions": [
+      {
+        "name": "Recursive Implementation of atoi()",
+        "solvingLink": "https://leetcode.com/problems/string-to-integer-atoi/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 143
+      },
+      {
+        "name": "Pow(x, n)",
+        "solvingLink": "https://leetcode.com/problems/powx-n/",
+        "solutionLink": "https://youtu.be/l0YC3876qxg",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 144
+      },
+      {
+        "name": "Count Good numbers",
+        "solvingLink": "https://leetcode.com/problems/count-good-numbers/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 145
+      },
+      {
+        "name": "Sort a stack using recursion",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/sort-a-stack/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 146
+      },
+      {
+        "name": "Reverse a stack using recursion",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/reverse-a-stack/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 147
+      }
+    ]
+  },
+  {
+    "name": "Subsequences Pattern",
+    "description": "Pattern Wise",
+    "questions": [
+      {
+        "name": "Generate all binary strings",
+        "solvingLink": "https://www.geeksforgeeks.org/generate-binary-strings-without-consecutive-1s/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 148
+      },
+      {
+        "name": "Generate Paranthesis",
+        "solvingLink": "https://leetcode.com/problems/generate-parentheses/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 149
+      },
+      {
+        "name": "Print all subsequences/Power Set",
+        "solvingLink": "https://leetcode.com/problems/subsets/",
+        "solutionLink": "https://youtu.be/b7AYbpM5YrE",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 150
+      },
+      {
+        "name": "Learn All Patterns of Subsequences (Theory)",
+        "solvingLink": "",
+        "solutionLink": "https://www.youtube.com/watch?v=eQCS_v3bw0Q&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=7",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 151
+      },
+      {
+        "name": "Count all subsequences with sum K",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/perfect-sum-problem5633/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 152
+      },
+      {
+        "name": "Check if there exists a subsequence with sum K",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 153
+      },
+      {
+        "name": "Combination Sum",
+        "solvingLink": "https://leetcode.com/problems/combination-sum/",
+        "solutionLink": "https://www.youtube.com/watch?v=OyZFFqQtu98&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=49",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 154
+      },
+      {
+        "name": "Combination Sum-II",
+        "solvingLink": "https://leetcode.com/problems/combination-sum-ii/",
+        "solutionLink": "https://www.youtube.com/watch?v=G1fRTGRxXU8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=50",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 155
+      },
+      {
+        "name": "Combination Sum – III",
+        "solvingLink": "https://leetcode.com/problems/combination-sum-iii/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 156
+      },
+      {
+        "name": "Subset Sum-I",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/subset-sums2234/1",
+        "solutionLink": "https://www.youtube.com/watch?v=rYkfBRtMJr8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=52",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 157
+      },
+      {
+        "name": "Subset Sum-II",
+        "solvingLink": "https://leetcode.com/problems/subsets-ii/",
+        "solutionLink": "https://www.youtube.com/watch?v=RIn3gOkbhQE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=53",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 158
+      },
+      {
+        "name": "Letter Combinations of a Phone number",
+        "solvingLink": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 159
+      }
+    ]
+  },
+  {
+    "name": "Try out all Combos /Hard",
+    "description": "Pattern Wise",
+    "questions": [
+      {
+        "name": "Palindrome Partitioning",
+        "solvingLink": "https://leetcode.com/problems/palindrome-partitioning/",
+        "solutionLink": "https://www.youtube.com/watch?v=WBgsABoClE0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=51",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 160
+      },
+      {
+        "name": "Word Search",
+        "solvingLink": "https://leetcode.com/problems/word-search/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 161
+      },
+      {
+        "name": "N Queen",
+        "solvingLink": "https://leetcode.com/problems/n-queens/",
+        "solutionLink": "https://www.youtube.com/watch?v=i05Ju7AftcM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=57",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 162
+      },
+      {
+        "name": "Rat in a Maze",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1",
+        "solutionLink": "https://www.youtube.com/watch?v=bLGZhJlt4y0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=60",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 163
+      },
+      {
+        "name": "Word Break",
+        "solvingLink": "https://leetcode.com/problems/word-break/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 164
+      },
+      {
+        "name": "M Coloring Problem",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1",
+        "solutionLink": "https://www.youtube.com/watch?v=wuVwUK25Rfc&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=59",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 165
+      },
+      {
+        "name": "Sudoko Solver",
+        "solvingLink": "https://leetcode.com/problems/sudoku-solver/",
+        "solutionLink": "https://www.youtube.com/watch?v=FWAIf_EVUKE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=58",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 166
+      },
+      {
+        "name": "Expression Add Operators",
+        "solvingLink": "https://leetcode.com/problems/expression-add-operators/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 167
+      }
+    ]
+  },
+  {
+    "name": "Learn Bit Manipulation",
+    "description": "Concepts & Problems",
+    "questions": [
+      {
+        "name": "Introduction to Bit Manipulation [Theory]",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 168
+      },
+      {
+        "name": "Check if the i-th bit is set or not",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/check-whether-k-th-bit-is-set-or-not-1587115620/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 169
+      },
+      {
+        "name": "Check if a number is odd or not",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/odd-or-even3618/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 170
+      },
+      {
+        "name": "Check if a number is power of 2 or not",
+        "solvingLink": "https://leetcode.com/problems/power-of-two/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 171
+      },
+      {
+        "name": "Count the number of set bits",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 172
+      },
+      {
+        "name": "Set/Unset the rightmost unset bit",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/set-the-rightmost-unset-bit4436/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 173
+      },
+      {
+        "name": "Swap two numbers",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/swap-two-numbers3844/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 174
+      },
+      {
+        "name": "Divide two integers without using multiplication, division and mod operator",
+        "solvingLink": "https://leetcode.com/problems/divide-two-integers/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 175
+      }
+    ]
+  },
+  {
+    "name": "Interview Problems",
+    "description": "Concepts & Problems",
+    "questions": [
+      {
+        "name": "Count number of bits to be flipped to convert A to B",
+        "solvingLink": "https://leetcode.com/problems/minimum-bit-flips-to-convert-number/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 176
+      },
+      {
+        "name": "Find the number that appears odd number of times",
+        "solvingLink": "https://leetcode.com/problems/single-number/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 177
+      },
+      {
+        "name": "Power Set",
+        "solvingLink": "https://leetcode.com/problems/subsets/",
+        "solutionLink": "https://www.youtube.com/watch?v=b7AYbpM5YrE&t=232s",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 178
+      },
+      {
+        "name": "Find xor of numbers from L to R",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 179
+      },
+      {
+        "name": "Find the two numbers appearing odd number of times",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/two-numbers-with-odd-occurrences5846/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 180
+      }
+    ]
+  },
+  {
+    "name": "Advanced Maths",
+    "description": "Concepts & Problems",
+    "questions": [
+      {
+        "name": "Print Prime Factors of a Number",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/prime-factors5052/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 181
+      },
+      {
+        "name": "All Divisors of a Number",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 182
+      },
+      {
+        "name": "Sieve of Eratosthenes",
+        "solvingLink": "https://leetcode.com/problems/count-primes/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 183
+      },
+      {
+        "name": "Find Prime Factorisation of a Number using Sieve",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 184
+      },
+      {
+        "name": "Power(n, x)",
+        "solvingLink": "https://leetcode.com/problems/powx-n/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 185
+      }
+    ]
+  },
+  {
+    "name": "Learning",
+    "description": "Pre-In-Post Fix, Monotonic Stack",
+    "questions": [
+      {
+        "name": "Implement Stack using Arrays",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1",
+        "solutionLink": "https://www.youtube.com/watch?v=GYptUgnIM_I&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=68",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 186
+      },
+      {
+        "name": "Implement Queue using Arrays",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/implement-queue-using-array/1",
+        "solutionLink": "https://www.youtube.com/watch?v=M6GnoUDpqEE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=72",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 187
+      },
+      {
+        "name": "Implement Stack using Queue",
+        "solvingLink": "https://leetcode.com/problems/implement-stack-using-queues/",
+        "solutionLink": "https://www.youtube.com/watch?v=jDZQKzEtbYQ&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=74",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 188
+      },
+      {
+        "name": "Implement Queue using Stack",
+        "solvingLink": "https://leetcode.com/problems/implement-queue-using-stacks/",
+        "solutionLink": "https://www.youtube.com/watch?v=3Et9MrMc02A&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=75",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 189
+      },
+      {
+        "name": "Implement stack using Linkedlist",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/implement-stack-using-linked-list/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 190
+      },
+      {
+        "name": "Implement queue using Linkedlist",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/implement-queue-using-linked-list/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 191
+      },
+      {
+        "name": "Check for balanced paranthesis",
+        "solvingLink": "https://leetcode.com/problems/valid-parentheses/",
+        "solutionLink": "https://www.youtube.com/watch?v=wkDfsKijrZ8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=74",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 192
+      },
+      {
+        "name": "Implement Min Stack",
+        "solvingLink": "https://leetcode.com/problems/min-stack/",
+        "solutionLink": "https://youtu.be/V09NfaGf2ao",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 193
+      }
+    ]
+  },
+  {
+    "name": "Prefix, Infix, Postfix Conversion Problems",
+    "description": "Pre-In-Post Fix, Monotonic Stack",
+    "questions": [
+      {
+        "name": "Infix to Postfix Conversion using Stack",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 194
+      },
+      {
+        "name": "Prefix to Infix Conversion",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 195
+      },
+      {
+        "name": "Prefix to Postfix Conversion",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 196
+      },
+      {
+        "name": "Postfix to Prefix Conversion",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 197
+      },
+      {
+        "name": "Postfix to Infix",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 198
+      },
+      {
+        "name": "Convert Infix To Prefix Notation",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 199
+      }
+    ]
+  },
+  {
+    "name": "Monotonic Stack /Queue Problem [Imp]",
+    "description": "Pre-In-Post Fix, Monotonic Stack",
+    "questions": [
+      {
+        "name": "Next Greater Element",
+        "solvingLink": "https://leetcode.com/problems/next-greater-element-i/",
+        "solutionLink": "https://www.youtube.com/watch?v=Du881K7Jtk8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=75",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 200
+      },
+      {
+        "name": "Next Greater Element - II",
+        "solvingLink": "https://leetcode.com/problems/next-greater-element-ii/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 201
+      },
+      {
+        "name": "Next Smaller Element",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/immediate-smaller-element1142/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 202
+      },
+      {
+        "name": "Number of NGEs to the right",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 203
+      },
+      {
+        "name": "Trapping Rainwater",
+        "solvingLink": "https://leetcode.com/problems/trapping-rain-water/",
+        "solutionLink": "https://www.youtube.com/watch?v=m18Hntz4go8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=42",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 204
+      },
+      {
+        "name": "Sum of subarray minimum",
+        "solvingLink": "https://leetcode.com/problems/sum-of-subarray-minimums/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 205
+      },
+      {
+        "name": "Stock span problem",
+        "solvingLink": "https://leetcode.com/problems/online-stock-span/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 206
+      },
+      {
+        "name": "Asteroid Collision",
+        "solvingLink": "https://leetcode.com/problems/asteroid-collision/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 207
+      },
+      {
+        "name": "Sum of subarray ranges",
+        "solvingLink": "https://leetcode.com/problems/sum-of-subarray-ranges/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 208
+      },
+      {
+        "name": "Remove k Digits",
+        "solvingLink": "https://leetcode.com/problems/remove-k-digits/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 209
+      },
+      {
+        "name": "Largest rectangle in a histogram",
+        "solvingLink": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+        "solutionLink": "https://www.youtube.com/watch?v=X0X6G-eWgQ8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=81",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 210
+      },
+      {
+        "name": "Maximal Rectangles",
+        "solvingLink": "https://leetcode.com/problems/maximal-rectangle/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 211
+      }
+    ]
+  },
+  {
+    "name": "Implementation Problems",
+    "description": "Pre-In-Post Fix, Monotonic Stack",
+    "questions": [
+      {
+        "name": "Sliding Window maximum",
+        "solvingLink": "https://leetcode.com/problems/sliding-window-maximum/",
+        "solutionLink": "https://www.youtube.com/watch?v=CZQGRp93K4k&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=83",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 212
+      },
+      {
+        "name": "Stock Span Problem",
+        "solvingLink": "https://leetcode.com/problems/online-stock-span/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 213
+      },
+      {
+        "name": "The Celebrity Problem",
+        "solvingLink": "https://leetcode.com/accounts/login/?next=/problems/find-the-celebrity/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 214
+      },
+      {
+        "name": "Rotten Oranges",
+        "solvingLink": "https://leetcode.com/problems/rotting-oranges/",
+        "solutionLink": "https://www.youtube.com/watch?v=yf3oUhkvqA0",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 215
+      },
+      {
+        "name": "LRU cache (IMPORTANT)",
+        "solvingLink": "https://leetcode.com/problems/lru-cache/",
+        "solutionLink": "https://www.youtube.com/watch?v=xDEuM5qa0zg&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=77",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 216
+      },
+      {
+        "name": "LFU cache",
+        "solvingLink": "https://leetcode.com/problems/lfu-cache/",
+        "solutionLink": "https://www.youtube.com/watch?v=0PSB9y8ehbk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=79",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 217
+      }
+    ]
+  },
+  {
+    "name": "Medium Problems",
+    "description": "Combined Problems",
+    "questions": [
+      {
+        "name": "Longest Substring Without Repeating Characters",
+        "solvingLink": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "solutionLink": "https://www.youtube.com/watch?v=qtVh-XEpsJo&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=26",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 218
+      },
+      {
+        "name": "Max Consecutive Ones III",
+        "solvingLink": "https://leetcode.com/problems/max-consecutive-ones-iii/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 219
+      },
+      {
+        "name": "Fruit Into Baskets",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 220
+      },
+      {
+        "name": "Longest repeating character replacement",
+        "solvingLink": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 221
+      },
+      {
+        "name": "Binary subarray with sum",
+        "solvingLink": "https://leetcode.com/problems/binary-subarrays-with-sum/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 222
+      },
+      {
+        "name": "Count number of nice subarrays",
+        "solvingLink": "https://leetcode.com/problems/count-number-of-nice-subarrays/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 223
+      },
+      {
+        "name": "Number of substring containing all three characters",
+        "solvingLink": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 224
+      },
+      {
+        "name": "Maximum point you can obtain from cards",
+        "solvingLink": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 225
+      }
+    ]
+  },
+  {
+    "name": "Hard Problems",
+    "description": "Combined Problems",
+    "questions": [
+      {
+        "name": "Longest Substring with At Most K Distinct Characters",
+        "solvingLink": "https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 226
+      },
+      {
+        "name": "Subarray with k different integers",
+        "solvingLink": "https://leetcode.com/problems/subarrays-with-k-different-integers/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 227
+      },
+      {
+        "name": "Minimum Window Substring",
+        "solvingLink": "https://leetcode.com/problems/minimum-window-substring/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 228
+      },
+      {
+        "name": "Minimum Window Subsequence",
+        "solvingLink": "https://leetcode.com/problems/minimum-window-subsequence/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 229
+      }
+    ]
+  },
+  {
+    "name": "Learning",
+    "description": "Learning, Medium, Hard Problems",
+    "questions": [
+      {
+        "name": "Introduction to Priority Queues using Binary Heaps",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 230
+      },
+      {
+        "name": "Min Heap and Max Heap Implementation",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/operations-on-binary-min-heap/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 231
+      },
+      {
+        "name": "Check if an array represents a min-heap or not",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/does-array-represent-heap4345/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 232
+      },
+      {
+        "name": "Convert min Heap to max Heap",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 233
+      }
+    ]
+  },
+  {
+    "name": "Medium Problems",
+    "description": "Learning, Medium, Hard Problems",
+    "questions": [
+      {
+        "name": "Kth largest element in an array [use priority queue]",
+        "solvingLink": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 234
+      },
+      {
+        "name": "Kth smallest element in an array [use priority queue]",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 235
+      },
+      {
+        "name": "Sort K sorted array",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/merge-k-sorted-arrays/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 236
+      },
+      {
+        "name": "Merge M sorted Lists",
+        "solvingLink": "https://leetcode.com/problems/merge-k-sorted-lists/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 237
+      },
+      {
+        "name": "Replace each array element by its corresponding rank",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 238
+      },
+      {
+        "name": "Task Scheduler",
+        "solvingLink": "https://leetcode.com/problems/task-scheduler/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 239
+      },
+      {
+        "name": "Hands of Straights",
+        "solvingLink": "https://leetcode.com/problems/hand-of-straights/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 240
+      }
+    ]
+  },
+  {
+    "name": "Hard Problems",
+    "description": "Learning, Medium, Hard Problems",
+    "questions": [
+      {
+        "name": "Design twitter",
+        "solvingLink": "https://leetcode.com/problems/design-twitter/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 241
+      },
+      {
+        "name": "Connect `n` ropes with minimal cost",
+        "solvingLink": "https://www.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 242
+      },
+      {
+        "name": "Kth largest element in a stream of running integers",
+        "solvingLink": "https://leetcode.com/problems/kth-largest-element-in-a-stream/#:~:text=Implement%20KthLargest%20class%3A,largest%20element%20in%20the%20stream.",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 243
+      },
+      {
+        "name": "Maximum Sum Combination",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 244
+      },
+      {
+        "name": "Find Median from Data Stream",
+        "solvingLink": "https://leetcode.com/problems/find-median-from-data-stream/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 245
+      },
+      {
+        "name": "K most frequent elements",
+        "solvingLink": "https://leetcode.com/problems/top-k-frequent-elements/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 246
+      }
+    ]
+  },
+  {
+    "name": "Easy Problems",
+    "description": "Easy -> Medium -> Hard",
+    "questions": [
+      {
+        "name": "Assign Cookies",
+        "solvingLink": "https://leetcode.com/problems/assign-cookies/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 247
+      },
+      {
+        "name": "Fractional Knapsack Problem",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1",
+        "solutionLink": "https://www.youtube.com/watch?v=F_DDzYnxO14&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=49",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 248
+      },
+      {
+        "name": "Greedy algorithm to find minimum",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/-minimum-number-of-coins4426/1",
+        "solutionLink": "https://www.youtube.com/watch?v=mVg9CfJvayM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=48",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 249
+      },
+      {
+        "name": "Lemonade Change",
+        "solvingLink": "https://leetcode.com/problems/lemonade-change/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 250
+      },
+      {
+        "name": "Valid Paranthesis Checker",
+        "solvingLink": "https://leetcode.com/problems/valid-parenthesis-string/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 251
+      }
+    ]
+  },
+  {
+    "name": "Medium /Hard Problems",
+    "description": "Easy -> Medium -> Hard",
+    "questions": [
+      {
+        "name": "N meetings in one room",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1",
+        "solutionLink": "https://www.youtube.com/watch?v=II6ziNnub1Q&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=45",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 252
+      },
+      {
+        "name": "Jump Game",
+        "solvingLink": "https://leetcode.com/problems/jump-game/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 253
+      },
+      {
+        "name": "Jump Game 2",
+        "solvingLink": "https://leetcode.com/problems/jump-game-ii/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 254
+      },
+      {
+        "name": "Minimum number of platforms required for a railway",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1",
+        "solutionLink": "https://www.youtube.com/watch?v=dxVcMDI7vyI&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=46",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 255
+      },
+      {
+        "name": "Job sequencing Problem",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1",
+        "solutionLink": "https://www.youtube.com/watch?v=LjPx4wQaRIs&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=47",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 256
+      },
+      {
+        "name": "Candy",
+        "solvingLink": "https://leetcode.com/problems/candy/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 257
+      },
+      {
+        "name": "Program for Shortest Job First (or SJF) CPU Scheduling",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 258
+      },
+      {
+        "name": "Program for Least Recently Used (LRU) Page Replacement Algorithm",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/page-faults-in-lru5603/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 259
+      },
+      {
+        "name": "Insert Interval",
+        "solvingLink": "https://leetcode.com/problems/insert-interval/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 260
+      },
+      {
+        "name": "Merge Intervals",
+        "solvingLink": "https://leetcode.com/problems/merge-intervals/",
+        "solutionLink": "https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 261
+      },
+      {
+        "name": "Non-overlapping Intervals",
+        "solvingLink": "https://leetcode.com/problems/non-overlapping-intervals/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 262
+      }
+    ]
+  },
+  {
+    "name": "Traversals",
+    "description": "Traversals, Medium and Hard Problems",
+    "questions": [
+      {
+        "name": "Introduction to Trees",
+        "solvingLink": "",
+        "solutionLink": "https://youtu.be/_ANrF3FJm7I",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 263
+      },
+      {
+        "name": "Binary Tree Representation in C++",
+        "solvingLink": "",
+        "solutionLink": "https://youtu.be/ctCpP0RFDFc",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 264
+      },
+      {
+        "name": "Binary Tree Representation in Java",
+        "solvingLink": "",
+        "solutionLink": "https://youtu.be/hyLyW7rP24I",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 265
+      },
+      {
+        "name": "Binary Tree Traversals in Binary Tree  ",
+        "solvingLink": "",
+        "solutionLink": "https://youtu.be/jmy0LaGET1I",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 266
+      },
+      {
+        "name": "Preorder Traversal of Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+        "solutionLink": "https://youtu.be/RlUu72JrOCQ",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 267
+      },
+      {
+        "name": "Inorder Traversal of Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+        "solutionLink": "https://youtu.be/Z_NEgBgbRVI",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 268
+      },
+      {
+        "name": "Post-order Traversal of Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+        "solutionLink": "https://youtu.be/COQOU6klsBg",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 269
+      },
+      {
+        "name": "Level order Traversal / Level order traversal in spiral form",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        "solutionLink": "https://youtu.be/EoAsWbO7sqg",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 270
+      },
+      {
+        "name": "Iterative Preorder Traversal of Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+        "solutionLink": "https://youtu.be/Bfqd8BsPVuw",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 271
+      },
+      {
+        "name": "Iterative Inorder Traversal of Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+        "solutionLink": "https://youtu.be/lxTGsVXjwvM",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 272
+      },
+      {
+        "name": "Post-order Traversal of Binary Tree using 2 stack",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+        "solutionLink": "https://youtu.be/2YBhNLodD8Q",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 273
+      },
+      {
+        "name": "Post-order Traversal of Binary Tree using 1 stack",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+        "solutionLink": "https://youtu.be/NzIGLLwZBS8",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 274
+      },
+      {
+        "name": "Preorder, Inorder, and Postorder Traversal in one Traversal",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/postorder-traversal-iterative/1",
+        "solutionLink": "https://youtu.be/ySp2epYvgTE",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 275
+      }
+    ]
+  },
+  {
+    "name": "Medium Problems",
+    "description": "Traversals, Medium and Hard Problems",
+    "questions": [
+      {
+        "name": "Height of a Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        "solutionLink": "https://youtu.be/eD3tmO66aBA",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 276
+      },
+      {
+        "name": "Check if the Binary tree is height-balanced or not",
+        "solvingLink": "https://leetcode.com/problems/balanced-binary-tree/",
+        "solutionLink": "https://youtu.be/Yt50Jfbd8Po",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 277
+      },
+      {
+        "name": "Diameter of Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/diameter-of-binary-tree/",
+        "solutionLink": "https://youtu.be/Rezetez59Nk",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 278
+      },
+      {
+        "name": "Maximum path sum",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+        "solutionLink": "https://youtu.be/WszrfSwMz58",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 279
+      },
+      {
+        "name": "Check if two trees are identical or not",
+        "solvingLink": "https://leetcode.com/problems/same-tree/",
+        "solutionLink": "https://youtu.be/BhuvF_-PWS0",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 280
+      },
+      {
+        "name": "Zig Zag Traversal of Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+        "solutionLink": "https://youtu.be/3OXWEdlIGl4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 281
+      },
+      {
+        "name": "Boundary Traversal of Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/boundary-of-binary-tree/",
+        "solutionLink": "https://youtu.be/0ca1nvR0be4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 282
+      },
+      {
+        "name": "Vertical Order Traversal of Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/",
+        "solutionLink": "https://youtu.be/q_a6lpbKJdw",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 283
+      },
+      {
+        "name": "Top View of Binary Tree",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1",
+        "solutionLink": "https://youtu.be/Et9OCDNvJ78",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 284
+      },
+      {
+        "name": "Bottom View of Binary Tree",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1",
+        "solutionLink": "https://youtu.be/0FtVY6I4pB8",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 285
+      },
+      {
+        "name": "Right/Left View of Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-right-side-view/",
+        "solutionLink": "https://youtu.be/KV4mRzTjlAk",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 286
+      },
+      {
+        "name": "Symmetric Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/symmetric-tree/",
+        "solutionLink": "https://youtu.be/nKggiEpBE",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 287
+      }
+    ]
+  },
+  {
+    "name": "Hard Problems",
+    "description": "Traversals, Medium and Hard Problems",
+    "questions": [
+      {
+        "name": "Root to Node Path in Binary Tree",
+        "solvingLink": "https://www.interviewbit.com/problems/path-to-given-node/",
+        "solutionLink": "https://youtu.be/fmflMqVOC7k",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 288
+      },
+      {
+        "name": "LCA in Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+        "solutionLink": "https://youtu.be/_-QHfMDde90",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 289
+      },
+      {
+        "name": "Maximum width of a Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/maximum-width-of-binary-tree/",
+        "solutionLink": "https://youtu.be/ZbybYvcVLks",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 290
+      },
+      {
+        "name": "Check for Children Sum Property",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/children-sum-parent/1",
+        "solutionLink": "https://youtu.be/fnmisPM6cVo",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 291
+      },
+      {
+        "name": "Print all the Nodes at a distance of K in a Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/",
+        "solutionLink": "https://youtu.be/i9ORlEy6EsI",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 292
+      },
+      {
+        "name": "Minimum time taken to BURN the Binary Tree from a Node",
+        "solvingLink": "https://www.codingninjas.com/codestudio/problems/time-to-burn-tree_630563?source=youtube&campaign=Striver_Tree_Videos",
+        "solutionLink": "https://youtu.be/2r5wLmQfD6g",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 293
+      },
+      {
+        "name": "Count total Nodes in a COMPLETE Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/count-complete-tree-nodes/",
+        "solutionLink": "https://youtu.be/u-yWemKGWO0",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 294
+      },
+      {
+        "name": "Requirements needed to construct a Unique Binary Tree | Theory",
+        "solvingLink": "",
+        "solutionLink": "https://youtu.be/9GMECGQgWrQ",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 295
+      },
+      {
+        "name": "Construct Binary Tree from inorder and preorder",
+        "solvingLink": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+        "solutionLink": "https://youtu.be/aZNaLrVebKQ",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 296
+      },
+      {
+        "name": "Construct the Binary Tree from Postorder and Inorder Traversal",
+        "solvingLink": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/",
+        "solutionLink": "https://youtu.be/LgLRTaEMRVc",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 297
+      },
+      {
+        "name": "Serialize and deserialize Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+        "solutionLink": "https://youtu.be/-YbXySKJsX8",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 298
+      },
+      {
+        "name": "Morris Preorder Traversal of a Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+        "solutionLink": "https://youtu.be/80Zug6D1_r4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 299
+      },
+      {
+        "name": "Morris Inorder Traversal of a Binary Tree",
+        "solvingLink": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+        "solutionLink": "https://youtu.be/80Zug6D1_r4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 300
+      },
+      {
+        "name": "Flatten Binary Tree to LinkedList",
+        "solvingLink": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+        "solutionLink": "https://youtu.be/sWf7k1x9XR4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 301
+      }
+    ]
+  },
+  {
+    "name": "Concepts",
+    "description": "Concept and Problems",
+    "questions": [
+      {
+        "name": "Introduction to Binary Search Tree",
+        "solvingLink": "",
+        "solutionLink": "https://youtu.be/p7-9UvDQZ3w",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 302
+      },
+      {
+        "name": "Search in a Binary Search Tree",
+        "solvingLink": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
+        "solutionLink": "https://youtu.be/KcNt6v_56cc",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 303
+      },
+      {
+        "name": "Find Min/Max in BST",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/minimum-element-in-bst/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 304
+      }
+    ]
+  },
+  {
+    "name": "Practice Problems",
+    "description": "Concept and Problems",
+    "questions": [
+      {
+        "name": "Ceil in a Binary Search Tree",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/implementing-ceil-in-bst/1",
+        "solutionLink": "https://youtu.be/KSsk8AhdOZA",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 305
+      },
+      {
+        "name": "Floor in a Binary Search Tree",
+        "solvingLink": "",
+        "solutionLink": "https://youtu.be/xm_W1ub-K-w",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 306
+      },
+      {
+        "name": "Insert a given Node in Binary Search Tree",
+        "solvingLink": "https://leetcode.com/problems/insert-into-a-binary-search-tree/",
+        "solutionLink": "https://youtu.be/FiFiNvM29ps",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 307
+      },
+      {
+        "name": "Delete a Node in Binary Search Tree",
+        "solvingLink": "https://leetcode.com/problems/delete-node-in-a-bst/",
+        "solutionLink": "https://youtu.be/kouxiP_H5WE",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 308
+      },
+      {
+        "name": "Find K-th smallest/largest element in BST",
+        "solvingLink": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+        "solutionLink": "https://youtu.be/9TJYWh0adfk",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 309
+      },
+      {
+        "name": "Check if a tree is a BST or BT",
+        "solvingLink": "https://leetcode.com/problems/validate-binary-search-tree/",
+        "solutionLink": "https://youtu.be/f-sj7I5oXEI",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 310
+      },
+      {
+        "name": "LCA in Binary Search Tree",
+        "solvingLink": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+        "solutionLink": "https://youtu.be/cX_kPV_foZc",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 311
+      },
+      {
+        "name": "Construct a BST from a preorder traversal",
+        "solvingLink": "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/",
+        "solutionLink": "https://youtu.be/UmJT3j26t1I",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 312
+      },
+      {
+        "name": "Inorder Successor/Predecessor in BST",
+        "solvingLink": "https://leetcode.com/problems/inorder-successor-in-bst/",
+        "solutionLink": "https://youtu.be/SXKAD2svfmI",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 313
+      },
+      {
+        "name": "Merge 2 BST’s",
+        "solvingLink": "https://leetcode.com/problems/binary-search-tree-iterator/",
+        "solutionLink": "https://youtu.be/D2jMcmxU4bs",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 314
+      },
+      {
+        "name": "Two Sum In BST | Check if there exists a pair with Sum K",
+        "solvingLink": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/",
+        "solutionLink": "https://youtu.be/ssL3sHwPeb4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 315
+      },
+      {
+        "name": "Recover BST | Correct BST with two nodes swapped",
+        "solvingLink": "https://leetcode.com/problems/recover-binary-search-tree/",
+        "solutionLink": "https://youtu.be/ZWGW7FminDM",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 316
+      },
+      {
+        "name": "Largest BST in Binary Tree",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/largest-bst/1",
+        "solutionLink": "https://youtu.be/X0oXMdtUDwo",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 317
+      }
+    ]
+  },
+  {
+    "name": "Learning",
+    "description": "Concepts and Problems",
+    "questions": [
+      {
+        "name": "Graph and Types",
+        "solvingLink": "",
+        "solutionLink": "https://youtu.be/M3_pLsDdeuU",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 318
+      },
+      {
+        "name": "Graph Representation | C++",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1",
+        "solutionLink": "https://youtu.be/3oI-34aPMWM",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 319
+      },
+      {
+        "name": "Graph Representation | Java",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1",
+        "solutionLink": "https://youtu.be/3oI-34aPMWM",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 320
+      },
+      {
+        "name": "Connected Components | Logic Explanation",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/number-of-provinces/1",
+        "solutionLink": "https://youtu.be/lea-Wl_uWXY",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 321
+      },
+      {
+        "name": "BFS",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1",
+        "solutionLink": "https://youtu.be/-tgVpUgsQ5k",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 322
+      },
+      {
+        "name": "DFS",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1",
+        "solutionLink": "https://youtu.be/Qzf1a--rhp8",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 323
+      }
+    ]
+  },
+  {
+    "name": "Problems on BFS /DFS",
+    "description": "Concepts and Problems",
+    "questions": [
+      {
+        "name": "Number of provinces (leetcode)",
+        "solvingLink": "https://leetcode.com/problems/number-of-provinces/#:~:text=A%20province%20is%20a%20group,the%20total%20number%20of%20provinces.",
+        "solutionLink": "https://youtu.be/ACzkVtewUYA",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 324
+      },
+      {
+        "name": "Connected Components Problem in Matrix",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/number-of-provinces/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 325
+      },
+      {
+        "name": "Rotten Oranges",
+        "solvingLink": "https://leetcode.com/problems/rotting-oranges/",
+        "solutionLink": "https://youtu.be/yf3oUhkvqA0",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 326
+      },
+      {
+        "name": "Flood fill",
+        "solvingLink": "https://leetcode.com/problems/flood-fill/",
+        "solutionLink": "https://youtu.be/C-2_uSRli8o",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 327
+      },
+      {
+        "name": "Cycle Detection in unirected Graph (bfs)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1",
+        "solutionLink": "https://youtu.be/BPlrALf1LDU",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 328
+      },
+      {
+        "name": "Cycle Detection in undirected Graph (dfs)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1",
+        "solutionLink": "https://youtu.be/zQ3zgFypzX4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 329
+      },
+      {
+        "name": "0/1 Matrix (Bfs Problem)",
+        "solvingLink": "https://leetcode.com/problems/01-matrix/",
+        "solutionLink": "https://www.youtube.com/watch?v=edXdVwkYHF8",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 330
+      },
+      {
+        "name": "Surrounded Regions (dfs)",
+        "solvingLink": "https://leetcode.com/problems/surrounded-regions/",
+        "solutionLink": "https://www.youtube.com/watch?v=BtdgAys4yMk",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 331
+      },
+      {
+        "name": "Number of Enclaves [flood fill implementation – multisource]",
+        "solvingLink": "https://leetcode.com/problems/number-of-enclaves/",
+        "solutionLink": "https://www.youtube.com/watch?v=rxKcepXQgU4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 332
+      },
+      {
+        "name": "Word ladder – 1",
+        "solvingLink": "https://leetcode.com/problems/word-ladder/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 333
+      },
+      {
+        "name": "Word ladder – 2",
+        "solvingLink": "https://leetcode.com/problems/word-ladder-ii/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 334
+      },
+      {
+        "name": "Number of Distinct Islands [dfs multisource]",
+        "solvingLink": "https://leetcode.com/problems/number-of-distinct-islands-ii/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 335
+      },
+      {
+        "name": "Bipartite Graph (DFS)",
+        "solvingLink": "https://leetcode.com/problems/is-graph-bipartite/",
+        "solutionLink": "https://www.youtube.com/watch?v=KG5YFfR0j8A",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 336
+      },
+      {
+        "name": "Cycle Detection in Directed Graph (DFS)",
+        "solvingLink": "https://leetcode.com/problems/course-schedule-ii/discuss/293048/detecting-cycle-in-directed-graph-problem",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 337
+      }
+    ]
+  },
+  {
+    "name": "Topo Sort and Problems",
+    "description": "Concepts and Problems",
+    "questions": [
+      {
+        "name": "Topo Sort",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/topological-sort/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 338
+      },
+      {
+        "name": "Kahn’s Algorithm",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/topological-sort/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 339
+      },
+      {
+        "name": "Cycle Detection in Directed Graph (BFS)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 340
+      },
+      {
+        "name": "Course Schedule – I",
+        "solvingLink": "https://leetcode.com/problems/course-schedule/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 341
+      },
+      {
+        "name": "Course Schedule – II",
+        "solvingLink": "https://leetcode.com/problems/course-schedule-ii/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 342
+      },
+      {
+        "name": "Find eventual safe states",
+        "solvingLink": "https://leetcode.com/problems/find-eventual-safe-states/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 343
+      },
+      {
+        "name": "Alien dictionary",
+        "solvingLink": "https://leetcode.com/problems/alien-dictionary/solution/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 344
+      }
+    ]
+  },
+  {
+    "name": "Shortest Path Algorithms and Problems",
+    "description": "Concepts and Problems",
+    "questions": [
+      {
+        "name": "Shortest Path in UG with unit weights",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 345
+      },
+      {
+        "name": "Shortest Path in DAG",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 346
+      },
+      {
+        "name": "Djisktra’s Algorithm",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 347
+      },
+      {
+        "name": "Why priority Queue is used in Djisktra’s Algorithm",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 348
+      },
+      {
+        "name": "Shortest path in a binary maze",
+        "solvingLink": "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 349
+      },
+      {
+        "name": "Path with minimum effort",
+        "solvingLink": "https://leetcode.com/problems/path-with-minimum-effort/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 350
+      },
+      {
+        "name": "Cheapest flights within k stops",
+        "solvingLink": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 351
+      },
+      {
+        "name": "Network Delay time",
+        "solvingLink": "https://leetcode.com/problems/network-delay-time/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 352
+      },
+      {
+        "name": "Number of ways to arrive at destination",
+        "solvingLink": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 353
+      },
+      {
+        "name": "Minimum steps to reach end from start by performing multiplication and mod operations with array elements",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/minimum-multiplications-to-reach-end/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 354
+      },
+      {
+        "name": "Bellman Ford Algorithm",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 355
+      },
+      {
+        "name": "Floyd Warshal Algorithm",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 356
+      },
+      {
+        "name": "Find the city with the smallest number of neighbors in a threshold distance",
+        "solvingLink": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 357
+      }
+    ]
+  },
+  {
+    "name": "Minimum Spanning Tree / Disjoint Set Problems",
+    "description": "Concepts and Problems",
+    "questions": [
+      {
+        "name": "Minimum Spanning Tree",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 358
+      },
+      {
+        "name": "Prim’s Algorithm",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 359
+      },
+      {
+        "name": "Disjoint Set [Union by Rank]",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/disjoint-set-union-find/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 360
+      },
+      {
+        "name": "Disjoint Set [Union by Size]",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/disjoint-set-union-find/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 361
+      },
+      {
+        "name": "Kruskal’s Algorithm",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 362
+      },
+      {
+        "name": "Number of operations to make network connected",
+        "solvingLink": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 363
+      },
+      {
+        "name": "Most stones removed with same rows or columns",
+        "solvingLink": "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 364
+      },
+      {
+        "name": "Accounts merge",
+        "solvingLink": "https://leetcode.com/problems/accounts-merge/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 365
+      },
+      {
+        "name": "Number of island II",
+        "solvingLink": "https://leetcode.com/problems/number-of-islands-ii/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 366
+      },
+      {
+        "name": "Making a Large Island",
+        "solvingLink": "https://leetcode.com/problems/making-a-large-island/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 367
+      },
+      {
+        "name": "Swim in rising water",
+        "solvingLink": "https://leetcode.com/problems/swim-in-rising-water/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 368
+      }
+    ]
+  },
+  {
+    "name": "Other Algorithms",
+    "description": "Concepts and Problems",
+    "questions": [
+      {
+        "name": "Bridges in Graph",
+        "solvingLink": "https://leetcode.com/problems/critical-connections-in-a-network/discuss/382385/find-bridges-in-a-graph",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 369
+      },
+      {
+        "name": "Articulation Point",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/articulation-point-1/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 370
+      },
+      {
+        "name": "Kosaraju’s Algorithm",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 371
+      }
+    ]
+  },
+  {
+    "name": "Introduction to DP",
+    "description": "Patterns and Problems",
+    "questions": [
+      {
+        "name": "Dynamic Programming Introduction",
+        "solvingLink": "",
+        "solutionLink": "https://youtu.be/tyB0ztf0DNY",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 372
+      }
+    ]
+  },
+  {
+    "name": "1D DP",
+    "description": "Patterns and Problems",
+    "questions": [
+      {
+        "name": "Climbing Stars",
+        "solvingLink": "https://leetcode.com/problems/climbing-stairs/",
+        "solutionLink": "https://youtu.be/mLfjzJsN8us",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 373
+      },
+      {
+        "name": "Frog Jump(DP-3)",
+        "solvingLink": "",
+        "solutionLink": "https://www.youtube.com/watch?v=EgG3jsGoPvQ",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 374
+      },
+      {
+        "name": "Frog Jump with k distances(DP-4)",
+        "solvingLink": "",
+        "solutionLink": "https://www.youtube.com/watch?v=Kmh3rhyEtB8",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 375
+      },
+      {
+        "name": "Maximum sum of non-adjacent elements (DP 5)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/max-sum-without-adjacents2430/1",
+        "solutionLink": "https://www.youtube.com/watch?v=GrMBfJNk_NY",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 376
+      },
+      {
+        "name": "House Robber (DP 6)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1",
+        "solutionLink": "https://www.youtube.com/watch?v=3WaxQMELSkw",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 377
+      }
+    ]
+  },
+  {
+    "name": "2D /3D DP and DP on Grids",
+    "description": "Patterns and Problems",
+    "questions": [
+      {
+        "name": "Ninja’s Training (DP 7)",
+        "solvingLink": "",
+        "solutionLink": "https://www.youtube.com/watch?v=AE39gJYuRog",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 378
+      },
+      {
+        "name": "Grid Unique Paths : DP on Grids (DP8)",
+        "solvingLink": "https://leetcode.com/problems/unique-paths/",
+        "solutionLink": "https://www.youtube.com/watch?v=sdE0A2Oxofw",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 379
+      },
+      {
+        "name": "Grid Unique Paths 2 (DP 9)",
+        "solvingLink": "https://leetcode.com/problems/unique-paths-ii/",
+        "solutionLink": "https://www.youtube.com/watch?v=TmhpgXScLyY",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 380
+      },
+      {
+        "name": "Minimum path sum in Grid (DP 10)",
+        "solvingLink": "https://leetcode.com/problems/minimum-path-sum/",
+        "solutionLink": "https://www.youtube.com/watch?v=_rgTlyky1uQ",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 381
+      },
+      {
+        "name": "Minimum path sum in Triangular Grid (DP 11)",
+        "solvingLink": "https://leetcode.com/problems/triangle/",
+        "solutionLink": "https://www.youtube.com/watch?v=SrP-PiLSYC0",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 382
+      },
+      {
+        "name": "Minimum/Maximum Falling Path Sum (DP-12)",
+        "solvingLink": "https://leetcode.com/problems/minimum-falling-path-sum/",
+        "solutionLink": "https://www.youtube.com/watch?v=N_aJ5qQbYA0",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 383
+      },
+      {
+        "name": "3D DP : Ninja and his friends (DP-13)",
+        "solvingLink": "",
+        "solutionLink": "https://www.youtube.com/watch?v=QGfn7JeXK54",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 384
+      }
+    ]
+  },
+  {
+    "name": "DP on Subsequence",
+    "description": "Patterns and Problems",
+    "questions": [
+      {
+        "name": "Subset sum equal to target (DP- 14)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1",
+        "solutionLink": "https://www.youtube.com/watch?v=fWX9xDmIzRI",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 385
+      },
+      {
+        "name": "Partition Equal Subset Sum (DP- 15)",
+        "solvingLink": "https://leetcode.com/problems/partition-equal-subset-sum/",
+        "solutionLink": "https://www.youtube.com/watch?v=7win3dcgo3k",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 386
+      },
+      {
+        "name": "Partition Set Into 2 Subsets With Min Absolute Sum Diff (DP- 16)",
+        "solvingLink": "https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/",
+        "solutionLink": "https://www.youtube.com/watch?v=GS_OqZb2CWc",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 387
+      },
+      {
+        "name": "Count Subsets with Sum K (DP – 17)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/perfect-sum-problem5633/1",
+        "solutionLink": "https://www.youtube.com/watch?v=ZHyb-A2Mte4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 388
+      },
+      {
+        "name": "Count Partitions with Given Difference (DP – 18)",
+        "solvingLink": "",
+        "solutionLink": "https://www.youtube.com/watch?v=zoilQD1kYSg",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 389
+      },
+      {
+        "name": "0/1 Knapsack (DP – 19)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1",
+        "solutionLink": "https://www.youtube.com/watch?v=GqOmJHQZivw",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 390
+      },
+      {
+        "name": "Minimum Coins (DP – 20)",
+        "solvingLink": "https://leetcode.com/problems/coin-change/",
+        "solutionLink": "https://www.youtube.com/watch?v=myPeWb3Y68A",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 391
+      },
+      {
+        "name": "Target Sum (DP – 21)",
+        "solvingLink": "https://leetcode.com/problems/target-sum/",
+        "solutionLink": "https://www.youtube.com/watch?v=b3GD8263-PQ",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 392
+      },
+      {
+        "name": "Coin Change 2 (DP – 22)",
+        "solvingLink": "https://leetcode.com/problems/coin-change-2/",
+        "solutionLink": "https://www.youtube.com/watch?v=HgyouUi11zk",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 393
+      },
+      {
+        "name": "Unbounded Knapsack (DP – 23)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1",
+        "solutionLink": "https://youtu.be/OgvOZ6OrJoY",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 394
+      },
+      {
+        "name": "Rod Cutting Problem | (DP – 24)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/rod-cutting0840/1",
+        "solutionLink": "https://youtu.be/mO8XpGoJwuo",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 395
+      }
+    ]
+  },
+  {
+    "name": "DP on Strings",
+    "description": "Patterns and Problems",
+    "questions": [
+      {
+        "name": "Longest Common Subsequence | (DP – 25)",
+        "solvingLink": "https://leetcode.com/problems/longest-common-subsequence/",
+        "solutionLink": "https://youtu.be/NPZn9jBrX8U",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 396
+      },
+      {
+        "name": "Print Longest Common Subsequence | (DP – 26)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/print-all-lcs-sequences3413/1",
+        "solutionLink": "https://youtu.be/-zI4mrF2Pb4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 397
+      },
+      {
+        "name": "Longest Common Substring | (DP – 27)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1",
+        "solutionLink": "https://youtu.be/_wP9mWNPL5w",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 398
+      },
+      {
+        "name": "Longest Palindromic Subsequence | (DP-28)",
+        "solvingLink": "https://leetcode.com/problems/longest-palindromic-subsequence/",
+        "solutionLink": "https://youtu.be/6i_T5kkfv4A",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 399
+      },
+      {
+        "name": "Minimum insertions to make string palindrome | DP-29",
+        "solvingLink": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/",
+        "solutionLink": "https://www.youtube.com/watch?v=xPBLEj41rFU",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 400
+      },
+      {
+        "name": "Minimum Insertions/Deletions to Convert String | (DP- 30)",
+        "solvingLink": "https://leetcode.com/problems/delete-operation-for-two-strings/",
+        "solutionLink": "https://www.youtube.com/watch?v=yMnH0jrir0Q",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 401
+      },
+      {
+        "name": "Shortest Common Supersequence | (DP – 31)",
+        "solvingLink": "https://leetcode.com/problems/shortest-common-supersequence/",
+        "solutionLink": "https://youtu.be/xElxAuBcvsU",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 402
+      },
+      {
+        "name": "Distinct Subsequences| (DP-32)",
+        "solvingLink": "https://leetcode.com/problems/distinct-subsequences/",
+        "solutionLink": "https://youtu.be/nVG7eTiD2bY",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 403
+      },
+      {
+        "name": "Edit Distance | (DP-33)",
+        "solvingLink": "https://leetcode.com/problems/edit-distance/",
+        "solutionLink": "https://youtu.be/fJaKO8FbDdo",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 404
+      },
+      {
+        "name": "Wildcard Matching | (DP-34)",
+        "solvingLink": "https://leetcode.com/problems/wildcard-matching/",
+        "solutionLink": "https://youtu.be/ZmlQ3vgAOMo",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 405
+      }
+    ]
+  },
+  {
+    "name": "DP on Stocks",
+    "description": "Patterns and Problems",
+    "questions": [
+      {
+        "name": "Best Time to Buy and Sell Stock |(DP-35)",
+        "solvingLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        "solutionLink": "https://youtu.be/excAOvwF_Wk",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 406
+      },
+      {
+        "name": "Buy and Sell Stock – II|(DP-36)",
+        "solvingLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/",
+        "solutionLink": "https://youtu.be/nGJmxkUJQGs",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 407
+      },
+      {
+        "name": "Buy and Sell Stocks III|(DP-37)",
+        "solvingLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/",
+        "solutionLink": "https://youtu.be/-uQGzhYj8BQ",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 408
+      },
+      {
+        "name": "Buy and Stock Sell IV |(DP-38)",
+        "solvingLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+        "solutionLink": "https://youtu.be/IV1dHbk5CDc",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 409
+      },
+      {
+        "name": "Buy and Sell Stocks With Cooldown|(DP-39)",
+        "solvingLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/",
+        "solutionLink": "https://youtu.be/IGIe46xw3YY",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 410
+      },
+      {
+        "name": "Buy and Sell Stocks With Transaction Fee|(DP-40)",
+        "solvingLink": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/",
+        "solutionLink": "https://youtu.be/k4eK-vEmnKg",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 411
+      }
+    ]
+  },
+  {
+    "name": "DP on LIS",
+    "description": "Patterns and Problems",
+    "questions": [
+      {
+        "name": "Longest Increasing Subsequence |(DP-41)",
+        "solvingLink": "https://leetcode.com/problems/longest-increasing-subsequence/",
+        "solutionLink": "https://youtu.be/ekcwMsSIzVc",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 412
+      },
+      {
+        "name": "Printing Longest Increasing Subsequence|(DP-42)",
+        "solvingLink": "",
+        "solutionLink": "https://youtu.be/IFfYfonAFGc",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 413
+      },
+      {
+        "name": "Longest Increasing Subsequence |(DP-43)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1",
+        "solutionLink": "https://youtu.be/on2hvxBXJH4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 414
+      },
+      {
+        "name": "Largest Divisible Subset|(DP-44)",
+        "solvingLink": "https://leetcode.com/problems/largest-divisible-subset/",
+        "solutionLink": "https://youtu.be/gDuZwBW9VvM",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 415
+      },
+      {
+        "name": "Longest String Chain|(DP-45)",
+        "solvingLink": "https://leetcode.com/problems/longest-string-chain/",
+        "solutionLink": "https://youtu.be/YY8iBaYcc4g",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 416
+      },
+      {
+        "name": "Longest Bitonic Subsequence |(DP-46)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence0824/1",
+        "solutionLink": "https://youtu.be/y4vN0WNdrlg",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 417
+      },
+      {
+        "name": "Number of Longest Increasing Subsequences|(DP-47)",
+        "solvingLink": "https://leetcode.com/problems/number-of-longest-increasing-subsequence/",
+        "solutionLink": "https://youtu.be/cKVl1TFdNXg",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 418
+      }
+    ]
+  },
+  {
+    "name": "MCM DP | Partition DP",
+    "description": "Patterns and Problems",
+    "questions": [
+      {
+        "name": "Matrix Chain Multiplication|(DP-48)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1",
+        "solutionLink": "https://youtu.be/vRVfmbCFW7Y",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 419
+      },
+      {
+        "name": "Matrix Chain Multiplication | Bottom-Up|(DP-49)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1",
+        "solutionLink": "https://youtu.be/pDCXsbAw5Cg",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 420
+      },
+      {
+        "name": "Minimum Cost to Cut the Stick|(DP-50)",
+        "solvingLink": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/",
+        "solutionLink": "https://youtu.be/xwomavsC86c",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 421
+      },
+      {
+        "name": "Burst Balloons|(DP-51)",
+        "solvingLink": "https://leetcode.com/problems/burst-balloons/",
+        "solutionLink": "https://youtu.be/Yz4LlDSlkns",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 422
+      },
+      {
+        "name": "Evaluate Boolean Expression to True|(DP-52)",
+        "solvingLink": "https://leetcode.com/problems/parsing-a-boolean-expression/",
+        "solutionLink": "https://youtu.be/MM7fXopgyjw",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 423
+      },
+      {
+        "name": "Palindrome Partitioning – II|(DP-53)",
+        "solvingLink": "https://leetcode.com/problems/palindrome-partitioning-ii/",
+        "solutionLink": "https://youtu.be/_H8V5hJUGd0",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 424
+      },
+      {
+        "name": "Partition Array for Maximum Sum|(DP-54)",
+        "solvingLink": "https://leetcode.com/problems/partition-array-for-maximum-sum/",
+        "solutionLink": "https://youtu.be/PhWWJmaKfMc",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 425
+      }
+    ]
+  },
+  {
+    "name": "DP on Squares",
+    "description": "Patterns and Problems",
+    "questions": [
+      {
+        "name": "Maximum Rectangle Area with all 1’s|(DP-55)",
+        "solvingLink": "https://leetcode.com/problems/maximal-rectangle/",
+        "solutionLink": "https://youtu.be/tOylVCugy9k",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 426
+      },
+      {
+        "name": "Count Square Submatrices with All Ones|(DP-56)",
+        "solvingLink": "https://leetcode.com/problems/count-square-submatrices-with-all-ones/",
+        "solutionLink": "https://youtu.be/auS1fynpnjo",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 427
+      }
+    ]
+  },
+  {
+    "name": "Theory",
+    "description": "Concepts and Problems",
+    "questions": [
+      {
+        "name": "Implement TRIE | INSERT | SEARCH | STARTSWITH",
+        "solvingLink": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+        "solutionLink": "https://www.youtube.com/watch?v=dBGUmUQhjaM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 428
+      }
+    ]
+  },
+  {
+    "name": "Problems",
+    "description": "Concepts and Problems",
+    "questions": [
+      {
+        "name": "Implement Trie – 2 (Prefix Tree)",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/trie-delete/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 429
+      },
+      {
+        "name": "Longest String with All Prefixes",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/longest-common-prefix-in-an-array5129/1",
+        "solutionLink": "https://www.youtube.com/watch?v=AWnBa91lThI&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=3",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 430
+      },
+      {
+        "name": "Number of Distinct Substrings in a String",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/count-of-distinct-substrings/1",
+        "solutionLink": "https://www.youtube.com/watch?v=RV0QeTyHZxo&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=4",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 431
+      },
+      {
+        "name": "Bit PreRequisites for TRIE Problems",
+        "solvingLink": "",
+        "solutionLink": "https://youtu.be/5iyuU4hQFrw",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 432
+      },
+      {
+        "name": "Maximum XOR of two numbers in an array",
+        "solvingLink": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/",
+        "solutionLink": "https://www.youtube.com/watch?v=EIhAwfHubE8&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=6",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 433
+      },
+      {
+        "name": "Maximum XOR With an Element From Array",
+        "solvingLink": "https://leetcode.com/problems/maximum-xor-with-an-element-from-array/",
+        "solutionLink": "https://www.youtube.com/watch?v=Q8LhG9Pi5KM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=7",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 434
+      }
+    ]
+  },
+  {
+    "name": "Hard Problems",
+    "description": "Hard Problems and Standard Algorithms",
+    "questions": [
+      {
+        "name": "Minimum number of bracket reversals needed to make an expression balanced",
+        "solvingLink": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 435
+      },
+      {
+        "name": "Count and say",
+        "solvingLink": "https://leetcode.com/problems/count-and-say/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 436
+      },
+      {
+        "name": "Hashing In Strings | Theory",
+        "solvingLink": "",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 437
+      },
+      {
+        "name": "Rabin Karp",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/31272eef104840f7430ad9fd1d43b434a4b9596b/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 438
+      },
+      {
+        "name": "Z-Function",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/8dcd25918295847b4ced54055eae35a8501181c1/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 439
+      },
+      {
+        "name": "KMP algo / LPS(pi) array",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/search-pattern0205/1",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 440
+      },
+      {
+        "name": "Shortest Palindrome",
+        "solvingLink": "https://leetcode.com/problems/shortest-palindrome/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 441
+      },
+      {
+        "name": "Longest happy prefix",
+        "solvingLink": "https://leetcode.com/problems/longest-happy-prefix/",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 442
+      },
+      {
+        "name": "Count palindromic subsequence in given string",
+        "solvingLink": "https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1#:~:text=Given%20a%20string%20str%20of,formed%20from%20the%20string%20str.&text=Your%20Task%3A,read%20input%20or%20print%20anything.",
+        "solutionLink": "",
+        "bookmark": false,
+        "note": "",
+        "revisionDate": null,
+        "id": 443
+      }
+    ]
+  }
+]

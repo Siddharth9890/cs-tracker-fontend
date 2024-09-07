@@ -1,22 +1,13 @@
 import TopicDetails from "./components/topics-card";
 import { Topic } from "@/types";
+import { fetchFile } from "@/lib/fetch";
 
-export default function Home() {
-  const topics: Topic[] = [
-    { description: "learn ll", name: "ll", questions: [] },
-    { description: "learn trees", name: "trees", questions: [] },
-    { description: "learn trees", name: "trees", questions: [] },
-    { description: "learn trees", name: "trees", questions: [] },
-    { description: "learn trees", name: "trees", questions: [] },
-    { description: "learn trees", name: "trees", questions: [] },
-    { description: "learn trees", name: "trees", questions: [] },
-    { description: "learn trees", name: "trees", questions: [] },
-    { description: "learn trees", name: "trees", questions: [] },
-  ];
+export default async function Home() {
+  const data: Topic[] = await fetchFile();
 
   return (
     <main>
-      <TopicDetails topics={topics} />
+      <TopicDetails topics={data} />
     </main>
   );
 }

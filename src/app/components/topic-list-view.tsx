@@ -1,3 +1,4 @@
+"use client";
 import { useState, useCallback } from "react";
 import { alpha } from "@mui/material/styles";
 import {
@@ -21,14 +22,15 @@ import { useTable } from "./table/use-table";
 import { getComparator, emptyRows } from "./table/utils";
 import CustomBreadcrumbs from "./custom-breadcrumbs/custom-breadcrumbs";
 import Scrollbar from "./scrollbar/scrollbar";
-import { Question } from "@/types";
+import { Question, Topic } from "@/types";
 
 const TABLE_HEAD = [
+  { id: "", width: 88 },
   { id: "question-name", label: "Question Name" },
-  { id: "link", label: "Link", width: 180 },
-  { id: "note", label: "Note", width: 180 },
-  { id: "book-mark", label: "Book Mark", width: 180 },
-  { id: "revision-date", label: "Revision Date", width: 180 },
+  { id: "link", label: "Link" },
+  { id: "note", label: "Note" },
+  { id: "book-mark", label: "Book Mark" },
+  { id: "revision-date", label: "Revision Date" },
 ];
 
 const defaultFilters: any = {
@@ -37,32 +39,10 @@ const defaultFilters: any = {
   status: "all",
 };
 
-export default function TopicListView() {
+export default function TopicListView({ topic }: { topic: Topic }) {
   const table = useTable();
 
-  const [tableData, setTableData] = useState<Question[]>([
-    {
-      name: "reverse a linked list",
-      bookMark: false,
-      link: "https://github.com/Gateway-DAO/dashboard-next/blob/develop/src/constants/routes.js",
-      note: "",
-      revisionDate: null,
-    },
-    {
-      name: "reverse a linked list",
-      bookMark: false,
-      link: "https://github.com/Gateway-DAO/dashboard-next/blob/develop/src/constants/routes.js",
-      note: "",
-      revisionDate: null,
-    },
-    {
-      name: "reverse a linked list",
-      bookMark: false,
-      link: "https://github.com/Gateway-DAO/dashboard-next/blob/develop/src/constants/routes.js",
-      note: "",
-      revisionDate: null,
-    },
-  ]);
+  const [tableData, setTableData] = useState<Question[]>(topic.questions);
 
   const [filters, setFilters] = useState(defaultFilters);
 
@@ -124,7 +104,7 @@ export default function TopicListView() {
             }}
           ></Tabs>
 
-          {true && (
+          {false && (
             <TableFiltersResult
               filters={filters}
               onFilters={handleFilters}
@@ -136,12 +116,9 @@ export default function TopicListView() {
             />
           )}
 
-          <TableContainer sx={{ position: "relative", overflow: "unset" }}>
+          <TableContainer>
             <Scrollbar>
-              <Table
-                size={table.dense ? "small" : "medium"}
-                sx={{ minWidth: 960 }}
-              >
+              <Table size={table.dense ? "small" : "medium"}>
                 <TableHeadCustom
                   order={table.order}
                   orderBy={table.orderBy}
@@ -157,9 +134,9 @@ export default function TopicListView() {
                       table.page * table.rowsPerPage,
                       table.page * table.rowsPerPage + table.rowsPerPage
                     )
-                    .map((row) => (
+                    .map((row, index) => (
                       <QuestionTableRow
-                        key={row.id}
+                        key={index}
                         row={row}
                         selected={table.selected.includes(row.id)}
                         onSelectRow={() => table.onSelectRow(row.id)}
