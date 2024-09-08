@@ -1,5 +1,5 @@
 export type Topic = {
-  name: string;
+  title: string;
   description: string;
   questions: Question[];
 };

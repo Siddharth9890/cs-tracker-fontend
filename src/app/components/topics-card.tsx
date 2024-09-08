@@ -9,6 +9,7 @@ type Props = {
 
 export default function TopicDetails({ topics }: Props) {
   const router = useRouter();
+  console.log(topics[0])
   return (
     <Box
       gap={3}
@@ -26,12 +27,12 @@ export default function TopicDetails({ topics }: Props) {
           key={index}
           sx={{ p: 3 }}
           onClick={() =>
-            router.push(`/${topic.name}`.toLowerCase().replace(/\s+/g, "-"))
+            router.push(`/${topic.title}`.toLowerCase().replace(/\s+/g, "-"))
           }
         >
           <Stack spacing={2}>
             <ListItemText
-              primary={topic.name}
+              primary={topic.title}
               secondary={topic.description}
               secondaryTypographyProps={{
                 mt: 0.5,

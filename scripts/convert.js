@@ -7,6 +7,7 @@ const transformContent = (content) => {
   const topics = content.categoryList.map((category) => ({
     name: category.categoryName,
     description: content.contentSubHeading,
+    title: content.contentHeading,
     questions: category.questionList.map((question, qIndex) => ({
       name: question.questionHeading,
       solvingLink: question.leetCodeLink || question.gfgLink,
@@ -19,7 +20,33 @@ const transformContent = (content) => {
   }));
 
   // topics.map((topic) => output.push(topic));
-  output.push(topics)
+  remapTopics(topics);
+};
+
+const remapTopics = (data) => {
+  const groupedByTitle = {};
+
+  // Loop through the input data
+  data.forEach((topic) => {
+    const { title, questions, description } = topic; // Extract the title and questions
+
+    // If this title is not already in the grouped object, initialize it
+    if (!groupedByTitle[title]) {
+      groupedByTitle[title] = { description, questions: [] };
+    }
+
+    // Merge the questions under the corresponding title
+    groupedByTitle[title].questions =
+      groupedByTitle[title].questions.concat(questions);
+  });
+  // Convert the grouped object into an array of objects with title and questions
+  const s = Object.keys(groupedByTitle).map((title) => ({
+    title,
+    questions: groupedByTitle[title].questions,
+    description: groupedByTitle[title].description,
+  }));
+  console.log(s);
+  output.push(s);
 };
 
 const object = {
@@ -6925,9 +6952,12 @@ const object = {
   ],
 };
 
+let s = [];
 object.content.map((c) => {
   transformContent(c);
-});
-console.log(output[0]);
 
-fs.writeFileSync("../a2z.json", JSON.stringify(output, null, 2), "utf-8");
+});
+output.map((o) => s.push(o[0]));
+console.log(s);
+
+fs.writeFileSync("../a2z.json", JSON.stringify(s, null, 2), "utf-8");

@@ -10,7 +10,7 @@ export default async function QuestionsPage({ params }: Props) {
   const data: Topic[] = await fetchFile();
 
   const topic = data.find(
-    (topic) => topic.name.toLowerCase().replace(/\s+/g, "-") === params.topic
+    (topic) => topic.title.toLowerCase().replace(/\s+/g, "-") === params.topic
   );
 
   console.log(topic);
