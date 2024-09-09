@@ -8,9 +8,20 @@ export type Question = {
   name: string;
   solvingLink: string;
   solutionLink: string;
-  bookMark: boolean;
-  revisionDate: null | Date;
-  note: string;
+  id: number;
 };
+
+export type QuestionMeta = {
+  question: Question;
+  isBookMark: boolean;
+  note: string;
+  revisionDate: null | Date;
+  checked: boolean;
+};
+
+export enum UpdateType {
+  SELECTED = "SELECTED",
+  META_UPDATED = "META_UPDATED",
+}
 
 export type PageWithParams<Params = any> = { params: Params };

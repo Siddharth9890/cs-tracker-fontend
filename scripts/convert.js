@@ -12,9 +12,6 @@ const transformContent = (content) => {
       name: question.questionHeading,
       solvingLink: question.leetCodeLink || question.gfgLink,
       solutionLink: question.youTubeLink,
-      bookmark: question.isBookmarked,
-      note: question.userNotes,
-      revisionDate: null,
       id: index++,
     })),
   }));
@@ -6955,7 +6952,6 @@ const object = {
 let s = [];
 object.content.map((c) => {
   transformContent(c);
-
 });
 output.map((o) => s.push(o[0]));
 console.log(s);

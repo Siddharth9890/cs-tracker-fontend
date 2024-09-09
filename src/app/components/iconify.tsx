@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 import { Box } from "@mui/material";
 //
 
+/* eslint-disable react/display-name */
 const Iconify = forwardRef<SVGElement, any>(
   ({ icon, width = 20, sx, ...other }, ref) => (
     <Box

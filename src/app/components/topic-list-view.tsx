@@ -1,6 +1,5 @@
 "use client";
-import { useState, useCallback } from "react";
-import { alpha } from "@mui/material/styles";
+import { useCallback, useEffect, useState } from "react";
 import {
   Tabs,
   Card,
@@ -11,21 +10,16 @@ import {
   TableContainer,
 } from "@mui/material";
 
-import TableFiltersResult from "./table/table-filter-result";
 import { routes } from "@/routes/routes";
 import QuestionTableRow from "./table/table-row";
 import { TableEmptyRows } from "./table/table-empty-rows";
 import { TableHeadCustom } from "./table/table-head-custom";
 import { TableNoData } from "./table/table-no-data";
-import { TablePaginationCustom } from "./table/table-pagination-custom";
-import { useTable } from "./table/use-table";
-import { getComparator, emptyRows } from "./table/utils";
 import CustomBreadcrumbs from "./custom-breadcrumbs/custom-breadcrumbs";
-import Scrollbar from "./scrollbar/scrollbar";
-import { Question, Topic } from "@/types";
+import { Question, QuestionMeta, Topic, UpdateType } from "@/types";
 
 const TABLE_HEAD = [
-  { id: "", width: 88 },
+  { id: "", label: "" },
   { id: "question-name", label: "Question Name" },
   { id: "link", label: "Link" },
   { id: "note", label: "Note" },
@@ -33,50 +27,81 @@ const TABLE_HEAD = [
   { id: "revision-date", label: "Revision Date" },
 ];
 
-const defaultFilters: any = {
-  name: "",
-  role: [],
-  status: "all",
-};
+export default function TopicListView({
+  topic,
+  sheetName,
+}: {
+  topic: Topic;
+  sheetName: string;
+}) {
+  const [tableData, setTableData] = useState<QuestionMeta[]>([]);
 
-export default function TopicListView({ topic }: { topic: Topic }) {
-  const table = useTable();
+  /* eslint-disable react-hooks/exhaustive-deps */
+  const onUpdatedRow = useCallback(
+    (question: QuestionMeta) => {
+      const updatedList = [...tableData];
+      let elementIndex = updatedList.findIndex(
+        (q) => q.question.id === question.question.id
+      );
+      console.log(updatedList, elementIndex);
 
-  const [tableData, setTableData] = useState<Question[]>(topic.questions);
+      updatedList[elementIndex] = question;
+      localStorage.setItem(
+        sheetName + topic.title,
+        JSON.stringify(updatedList)
+      );
+      console.log(updatedList);
 
-  const [filters, setFilters] = useState(defaultFilters);
-
-  const dataFiltered = applyFilter({
-    inputData: tableData,
-    comparator: getComparator(table.order, table.orderBy),
-    filters,
-  });
-
-  const denseHeight = table.dense ? 52 : 72;
-
-  const notFound = !dataFiltered.length;
-
-  const handleFilters = useCallback(
-    (name: string, value: any) => {
-      table.onResetPage();
-      setFilters((prevState: any) => ({
-        ...prevState,
-        [name]: value,
-      }));
+      setTableData(updatedList);
     },
-    [table]
+    [tableData]
   );
 
-  const handleFilterStatus = useCallback(
-    (event: React.SyntheticEvent, newValue: string) => {
-      handleFilters("status", newValue);
-    },
-    [handleFilters]
-  );
+  function applyFilter({
+    questions,
+  }: {
+    questions: Question[];
+  }): QuestionMeta[] {
+    return getInitialData({ questions });
+  }
 
-  const handleResetFilters = useCallback(() => {
-    setFilters(defaultFilters);
+  useEffect(() => {
+    setTableData(getInitialData({ questions: topic.questions }));
   }, []);
+
+  const getInitialData = ({ questions }: { questions: Question[] }) => {
+    let tempQuestions: QuestionMeta[] = [];
+    console.log("1");
+    const item = localStorage.getItem(sheetName + topic.title);
+    if (item) {
+      console.log("2");
+
+      const q = JSON.parse(item) as QuestionMeta[];
+      console.log("3");
+
+      return q;
+    } else {
+      console.log("4");
+
+      questions.map((question) =>
+        tempQuestions.push({
+          question,
+          isBookMark: false,
+          note: "",
+          revisionDate: null,
+          checked: false,
+        })
+      );
+      console.log(tempQuestions);
+      localStorage.setItem(
+        sheetName + topic.title,
+        JSON.stringify(tempQuestions)
+      );
+      return tempQuestions;
+    }
+  };
+
+  const notFound = !tableData.length;
 
   return (
     <>
@@ -94,120 +119,27 @@ export default function TopicListView({ topic }: { topic: Topic }) {
         />
 
         <Card>
-          <Tabs
-            value={filters.status}
-            onChange={handleFilterStatus}
-            sx={{
-              px: 2.5,
-              boxShadow: (theme) =>
-                `inset 0 -2px 0 0 ${alpha(theme.palette.grey[500], 0.08)}`,
-            }}
-          ></Tabs>
-
-          {false && (
-            <TableFiltersResult
-              filters={filters}
-              onFilters={handleFilters}
-              //
-              onResetFilters={handleResetFilters}
-              //
-              results={dataFiltered.length}
-              sx={{ p: 2.5, pt: 0 }}
-            />
-          )}
-
-          <TableContainer>
-            <Scrollbar>
-              <Table size={table.dense ? "small" : "medium"}>
-                <TableHeadCustom
-                  order={table.order}
-                  orderBy={table.orderBy}
-                  headLabel={TABLE_HEAD}
-                  rowCount={tableData.length}
-                  numSelected={table.selected.length}
-                  onSort={table.onSort}
-                />
+          <>
+            <TableContainer sx={{ minWidth: 800, position: "relative" }}>
+              <Table size={"medium"}>
+                <TableHeadCustom headLabel={TABLE_HEAD} />
 
                 <TableBody>
-                  {dataFiltered
-                    .slice(
-                      table.page * table.rowsPerPage,
-                      table.page * table.rowsPerPage + table.rowsPerPage
-                    )
-                    .map((row, index) => (
-                      <QuestionTableRow
-                        key={index}
-                        row={row}
-                        selected={table.selected.includes(row.id)}
-                        onSelectRow={() => table.onSelectRow(row.id)}
-                      />
-                    ))}
-
-                  <TableEmptyRows
-                    height={denseHeight}
-                    emptyRows={emptyRows(
-                      table.page,
-                      table.rowsPerPage,
-                      tableData.length
-                    )}
-                  />
+                  {tableData.map((row, index) => (
+                    <QuestionTableRow
+                      key={index}
+                      row={row}
+                      onUpdatedRow={(question) => onUpdatedRow(question)}
+                    />
+                  ))}
 
                   <TableNoData notFound={notFound} />
                 </TableBody>
               </Table>
-            </Scrollbar>
-          </TableContainer>
-
-          <TablePaginationCustom
-            count={dataFiltered.length}
-            page={table.page}
-            rowsPerPage={table.rowsPerPage}
-            onPageChange={table.onChangePage}
-            onRowsPerPageChange={table.onChangeRowsPerPage}
-            //
-            dense={table.dense}
-            onChangeDense={table.onChangeDense}
-          />
+            </TableContainer>
+          </>
         </Card>
       </Container>
     </>
   );
-}
-
-function applyFilter({
-  inputData,
-  comparator,
-  filters,
-}: {
-  inputData: any[];
-  comparator: (a: any, b: any) => number;
-  filters: any;
-}) {
-  const { name, status, role } = filters;
-
-  const stabilizedThis = inputData.map((el, index) => [el, index] as const);
-
-  stabilizedThis.sort((a, b) => {
-    const order = comparator(a[0], b[0]);
-    if (order !== 0) return order;
-    return a[1] - b[1];
-  });
-
-  inputData = stabilizedThis.map((el) => el[0]);
-
-  if (name) {
-    inputData = inputData.filter(
-      (user) => user.name.toLowerCase().indexOf(name.toLowerCase()) !== -1
-    );
-  }
-
-  if (status !== "all") {
-    inputData = inputData.filter((user) => user.status === status);
-  }
-
-  if (role.length) {
-    inputData = inputData.filter((user) => role.includes(user.role));
-  }
-
-  return inputData;
 }

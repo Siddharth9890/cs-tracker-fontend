@@ -6,27 +6,26 @@ import NoteAddOutlinedIcon from "@mui/icons-material/NoteAddOutlined";
 import EditNoteOutlinedIcon from "@mui/icons-material/EditNoteOutlined";
 import LaunchIcon from "@mui/icons-material/Launch";
 
-import { Question } from "@/types";
+import { Question, QuestionMeta } from "@/types";
 import { fDate } from "@/utils/format-date";
 
 type Props = {
-  selected: boolean;
-  row: Question;
-  onSelectRow: VoidFunction;
+  row: QuestionMeta;
+  onUpdatedRow: (question: QuestionMeta) => void;
 };
 
-export default function QuestionTableRow({
-  row,
-  selected,
-  onSelectRow,
-}: Props) {
-  const { name, bookMark, solvingLink, solutionLink, note, revisionDate } = row;
+export default function QuestionTableRow({ row, onUpdatedRow }: Props) {
+  const { question, isBookMark, note, revisionDate, checked } = row;
+  const { id, name, solutionLink, solvingLink } = question;
 
   return (
     <>
-      <TableRow hover selected={selected}>
+      <TableRow hover selected={false}>
         <TableCell padding="checkbox">
-          <Checkbox checked={selected} onClick={onSelectRow} />
+          <Checkbox
+            checked={checked}
+            onClick={() => onUpdatedRow({ ...row, checked: !row.checked })}
+          />
         </TableCell>
 
         <TableCell sx={{ alignItems: "center" }}>
@@ -67,8 +66,12 @@ export default function QuestionTableRow({
           )}
         </TableCell>
 
-        <TableCell sx={{ whiteSpace: "nowrap" }}>
-          {bookMark ? <BookmarkOutlinedIcon /> : <BookmarkBorderOutlinedIcon />}
+        <TableCell sx={{ whiteSpace: "nowrap" }} onClick={() => {}}>
+          {isBookMark ? (
+            <BookmarkOutlinedIcon />
+          ) : (
+            <BookmarkBorderOutlinedIcon />
+          )}
         </TableCell>
 
         <TableCell sx={{ whiteSpace: "nowrap" }}>
