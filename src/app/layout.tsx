@@ -19,7 +19,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider theme={darkTheme}>
           <CssBaseline />
-          <LayoutHeader />
+          {/* <LayoutHeader /> */}
           <Container component="main" sx={{ py: 4 }}>
             <Main>{children}</Main>
           </Container>

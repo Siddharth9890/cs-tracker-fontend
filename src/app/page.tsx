@@ -7,7 +7,8 @@ export default async function Home() {
 
   return (
     <main>
-      <TopicDetails topics={data} />
+      
+      This website is under development
     </main>
   );
 }
