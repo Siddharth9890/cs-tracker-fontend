@@ -8,6 +8,9 @@ import LaunchIcon from "@mui/icons-material/Launch";
 
 import { Question, QuestionMeta } from "@/types";
 import { fDate } from "@/utils/format-date";
+import { useBoolean } from "@/hooks/use-boolean";
+import Notes from "../dialog/notes";
+import RevisionDate from "../dialog/revision-date";
 
 type Props = {
   row: QuestionMeta;
@@ -17,6 +20,9 @@ type Props = {
 export default function QuestionTableRow({ row, onUpdatedRow }: Props) {
   const { question, isBookMark, note, revisionDate, checked } = row;
   const { id, name, solutionLink, solvingLink } = question;
+
+  const notesDialog = useBoolean();
+  const revisionDateDialog = useBoolean();
 
   return (
     <>
@@ -32,6 +38,7 @@ export default function QuestionTableRow({ row, onUpdatedRow }: Props) {
           <ListItemText
             primary={name}
             primaryTypographyProps={{ typography: "body2" }}
+            sx={{ textDecoration: checked ? "line-through" : "none" }}
             secondaryTypographyProps={{
               component: "span",
               color: "text.disabled",
@@ -58,7 +65,10 @@ export default function QuestionTableRow({ row, onUpdatedRow }: Props) {
           </Link>
         </TableCell>
 
-        <TableCell sx={{ whiteSpace: "nowrap" }}>
+        <TableCell
+          sx={{ whiteSpace: "nowrap" }}
+          onClick={() => notesDialog.onToggle()}
+        >
           {note.length === 0 ? (
             <NoteAddOutlinedIcon />
           ) : (
@@ -66,7 +76,10 @@ export default function QuestionTableRow({ row, onUpdatedRow }: Props) {
           )}
         </TableCell>
 
-        <TableCell sx={{ whiteSpace: "nowrap" }} onClick={() => {}}>
+        <TableCell
+          sx={{ whiteSpace: "nowrap" }}
+          onClick={() => onUpdatedRow({ ...row, isBookMark: !row.isBookMark })}
+        >
           {isBookMark ? (
             <BookmarkOutlinedIcon />
           ) : (
@@ -74,10 +87,23 @@ export default function QuestionTableRow({ row, onUpdatedRow }: Props) {
           )}
         </TableCell>
 
-        <TableCell sx={{ whiteSpace: "nowrap" }}>
+        <TableCell
+          sx={{ whiteSpace: "nowrap" }}
+          onClick={() => revisionDateDialog.onToggle()}
+        >
           {revisionDate === null ? "-" : fDate(revisionDate)}
         </TableCell>
       </TableRow>
+      <Notes
+        onClose={notesDialog.onFalse}
+        open={notesDialog.value}
+        onUpdatedRow={onUpdatedRow}
+      />
+      <RevisionDate
+        onClose={revisionDateDialog.onFalse}
+        open={revisionDateDialog.value}
+        onUpdatedRow={onUpdatedRow}
+      />
     </>
   );
 }
