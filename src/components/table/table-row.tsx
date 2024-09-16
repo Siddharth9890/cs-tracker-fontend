@@ -6,7 +6,7 @@ import NoteAddOutlinedIcon from "@mui/icons-material/NoteAddOutlined";
 import EditNoteOutlinedIcon from "@mui/icons-material/EditNoteOutlined";
 import LaunchIcon from "@mui/icons-material/Launch";
 
-import { Question, QuestionMeta } from "@/types";
+import { QuestionMeta } from "@/types";
 import { fDate } from "@/utils/format-date";
 import { useBoolean } from "@/hooks/use-boolean";
 import Notes from "../dialog/notes";
@@ -15,22 +15,48 @@ import RevisionDate from "../dialog/revision-date";
 type Props = {
   row: QuestionMeta;
   onUpdatedRow: (question: QuestionMeta) => void;
+  sheetName: string;
 };
 
-export default function QuestionTableRow({ row, onUpdatedRow }: Props) {
+export default function QuestionTableRow({
+  row,
+  onUpdatedRow,
+  sheetName,
+}: Props) {
   const { question, isBookMark, note, revisionDate, checked } = row;
   const { id, name, solutionLink, solvingLink } = question;
 
   const notesDialog = useBoolean();
   const revisionDateDialog = useBoolean();
 
+  const updateProgress = (checked: boolean) => {
+    const item = localStorage.getItem(sheetName);
+    if (item === null) {
+      localStorage.setItem(
+        sheetName,
+        JSON.stringify({ currentProgress: 0, totalQuestions: 443 })
+      );
+    } else {
+      let { currentProgress, totalQuestions } = JSON.parse(item);
+      if (!checked) currentProgress += 1;
+      else currentProgress -= 1;
+      localStorage.setItem(
+        sheetName,
+        JSON.stringify({ currentProgress, totalQuestions })
+      );
+    }
+  };
+
   return (
     <>
-      <TableRow hover selected={false}>
+      <TableRow hover>
         <TableCell padding="checkbox">
           <Checkbox
             checked={checked}
-            onClick={() => onUpdatedRow({ ...row, checked: !row.checked })}
+            onClick={() => {
+              updateProgress(checked);
+              onUpdatedRow({ ...row, checked: !row.checked });
+            }}
           />
         </TableCell>
 
@@ -98,11 +124,13 @@ export default function QuestionTableRow({ row, onUpdatedRow }: Props) {
         onClose={notesDialog.onFalse}
         open={notesDialog.value}
         onUpdatedRow={onUpdatedRow}
+        row={row}
       />
       <RevisionDate
         onClose={revisionDateDialog.onFalse}
         open={revisionDateDialog.value}
         onUpdatedRow={onUpdatedRow}
+        row={row}
       />
     </>
   );

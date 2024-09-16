@@ -13,11 +13,11 @@ type Props = {
   open: boolean;
   onClose: VoidFunction;
   onUpdatedRow: (question: QuestionMeta) => void;
-  value: string;
+  row: QuestionMeta;
 };
 
-export default function Notes({ open, onClose, onUpdatedRow, value }: Props) {
-  const [note, setNote] = useState(value);
+export default function Notes({ open, onClose, onUpdatedRow, row }: Props) {
+  const [note, setNote] = useState(row.note);
 
   return (
     <>
@@ -27,7 +27,7 @@ export default function Notes({ open, onClose, onUpdatedRow, value }: Props) {
         open={open}
         onClose={onClose}
         PaperProps={{
-          sx: { maxWidth: 450 },
+          sx: { maxWidth: 450, bgcolor: "#212B36" },
         }}
       >
         <>
@@ -37,14 +37,20 @@ export default function Notes({ open, onClose, onUpdatedRow, value }: Props) {
               label="Notes"
               multiline
               minRows={6}
-              value={value}
+              value={note}
               onChange={(e) => setNote(e.target.value)}
               sx={{ width: "100%", mt: 1 }}
             />
           </DialogContent>
 
           <DialogActions>
-            <Button variant="contained" onClick={onClose}>
+            <Button
+              variant="contained"
+              onClick={() => {
+                onUpdatedRow({ ...row, note });
+                onClose();
+              }}
+            >
               Submit
             </Button>
             <Button variant="contained" onClick={onClose}>

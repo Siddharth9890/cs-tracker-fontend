@@ -19,9 +19,4 @@ export type QuestionMeta = {
   checked: boolean;
 };
 
-export enum UpdateType {
-  SELECTED = "SELECTED",
-  META_UPDATED = "META_UPDATED",
-}
-
 export type PageWithParams<Params = any> = { params: Params };

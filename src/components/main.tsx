@@ -1,6 +1,5 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
-import { HEADER, NAV } from "./config-layout";
 
 export default function Main({
   children,
@@ -15,7 +14,7 @@ export default function Main({
         minHeight: 1,
         display: "flex",
         flexDirection: "column",
-        py: `${HEADER.H_MOBILE + 8}px`,
+        bgcolor: "#161C24",
       }}
     >
       {children}

@@ -16,10 +16,18 @@ type Props = {
   open: boolean;
   onClose: VoidFunction;
   onUpdatedRow: (question: QuestionMeta) => void;
+  row: QuestionMeta;
 };
 
-export default function RevisionDate({ open, onClose }: Props) {
-  const [revisionDate, setRevisionDate] = useState(new Date());
+export default function RevisionDate({
+  open,
+  onClose,
+  onUpdatedRow,
+  row,
+}: Props) {
+  const [revisionDate, setRevisionDate] = useState(
+    row.revisionDate === null ? new Date() : row.revisionDate
+  );
 
   return (
     <>
@@ -29,7 +37,7 @@ export default function RevisionDate({ open, onClose }: Props) {
         open={open}
         onClose={onClose}
         PaperProps={{
-          sx: { maxWidth: 450 },
+          sx: { maxWidth: 450, bgcolor: "#212B36" },
         }}
       >
         <>
@@ -38,14 +46,20 @@ export default function RevisionDate({ open, onClose }: Props) {
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DateCalendar
                 minDate={dayjs()}
-                value={revisionDate}
+                value={dayjs(revisionDate)}
                 onChange={(newValue) => setRevisionDate(newValue)}
               />
             </LocalizationProvider>
           </DialogContent>
 
           <DialogActions>
-            <Button variant="contained" onClick={onClose}>
+            <Button
+              variant="contained"
+              onClick={() => {
+                onUpdatedRow({ ...row, revisionDate });
+                onClose();
+              }}
+            >
               Submit
             </Button>
             <Button variant="contained" onClick={onClose}>
