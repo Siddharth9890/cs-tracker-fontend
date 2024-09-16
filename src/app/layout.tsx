@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "CS-Tracker: Private, Organized Interview Prep, All in Your Browser",
     siteName: "CS-Tracker",
-    images: "https://cs-tracker.vercel.app/assets/logo.webp",
+    images: "/logo.webp",
   },
   creator: "Siddharth9890",
 };
