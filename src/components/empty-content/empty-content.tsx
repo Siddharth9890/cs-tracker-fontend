@@ -1,10 +1,5 @@
-// @mui
 import { alpha } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Stack, { StackProps } from "@mui/material/Stack";
-
-// ----------------------------------------------------------------------
+import { Typography, Stack, StackProps } from "@mui/material";
 
 type EmptyContentProps = StackProps & {
   title?: string;
@@ -41,13 +36,6 @@ export default function EmptyContent({
       }}
       {...other}
     >
-      <Box
-        component="img"
-        alt="empty content"
-        src={imgUrl || "/assets/icons/empty/ic_content.svg"}
-        sx={{ width: 1, maxWidth: 160 }}
-      />
-
       {title && (
         <Typography
           variant="h6"
@@ -66,8 +54,6 @@ export default function EmptyContent({
           {description}
         </Typography>
       )}
-
-      {action && action}
     </Stack>
   );
 }

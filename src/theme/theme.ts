@@ -11,6 +11,7 @@ export const lightTheme = createTheme({
 export const darkTheme = createTheme({
   palette: {
     mode: "dark",
+    background: { default: "#161C24" },
   },
   shape: {
     borderRadius: 16,

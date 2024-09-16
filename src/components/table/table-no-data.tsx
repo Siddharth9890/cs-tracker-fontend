@@ -1,11 +1,8 @@
-// @mui
 import { Theme, SxProps } from "@mui/material/styles";
 import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
-//
 import EmptyContent from "../empty-content/empty-content";
 
-// ----------------------------------------------------------------------
 
 type Props = {
   notFound: boolean;
@@ -19,7 +16,7 @@ export function TableNoData({ notFound, sx }: Props) {
         <TableCell colSpan={12}>
           <EmptyContent
             filled
-            title="No Data"
+            title="No Data Found"
             sx={{
               py: 10,
               ...sx,
